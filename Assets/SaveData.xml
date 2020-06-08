@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MyData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <_name>2445</_name>
+  <_uniqueID>ugtujh</_uniqueID>
+  <_description>yuh</_description>
+  <_vendorPrice>226</_vendorPrice>
+  <_moddable>true</_moddable>
+  <_RecoilCompensation>2.55</_RecoilCompensation>
+  <_allowedFireModes>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+  </_allowedFireModes>
+</MyData>
