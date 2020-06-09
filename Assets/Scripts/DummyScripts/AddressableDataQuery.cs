@@ -10,7 +10,20 @@ namespace DefaultNamespace.DummyScripts
 
         public void Start()
         {
+            //AssetIdToAddress = new Dictionary<string, string>();
+            //Debug.Log(UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.groups.Count);
+            Debug.Log(UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.groups[1].entries.Count);
 
+            
+            foreach (var addressableAssetGroup in UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject
+                .Settings.groups)
+            {
+                foreach (var addressableAssetEntry in addressableAssetGroup.entries)
+                {
+                    
+                }
+            }
+return;
             Debug.Log(addressableAssetGroup.entries.Count);
 
             foreach (var entry in addressableAssetGroup.entries)

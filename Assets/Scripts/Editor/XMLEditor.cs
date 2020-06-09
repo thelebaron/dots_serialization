@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using DefaultNamespace;
+using DOTS.Serialization;
 using Unity.Entities;
 using Unity.Entities.Serialization;
 using Unity.Physics.Systems;
@@ -134,21 +135,37 @@ public class XMLEditor : Editor
 
     private void SaveJsonYamlXml(NewComponent script)
     {
-        var serializer = new XmlSerializer(typeof(MyData));
-        var textWriter = new StreamWriter(xmlpath);
-        serializer.Serialize(textWriter, script.myData);
-        textWriter.Close();
-        var jsondata = JsonUtility.ToJson(script.myData, true);
-        File.WriteAllText(jsonpath, jsondata);
-        
-        // DOTS Save world
-        if(World.All.Count<1) return;
-        using (var writer = new StreamWriter(yamlpath))
         {
-            var em = World.DefaultGameObjectInjectionWorld.EntityManager;
-            // Save world to yaml
-            writer.NewLine = "\n";
-            SerializeUtility.SerializeWorldIntoYAML(em, writer, false); // is yaml just debugging?
+            //xml
+            var serializer = new XmlSerializer(typeof(MyData));
+            var textWriter = new StreamWriter(xmlpath);
+            serializer.Serialize(textWriter, script.myData);
+            textWriter.Close();
+        }
+        
+        {
+            // json
+            var jsondata = JsonUtility.ToJson(script.myData, true);
+            File.WriteAllText(jsonpath, jsondata);
+        }
+
+        {
+            // yaml dots
+            if (World.All.Count < 1) return;
+            using (var writer = new StreamWriter(yamlpath))
+            {
+                var em = World.DefaultGameObjectInjectionWorld.EntityManager;
+                // Save world to yaml
+                writer.NewLine = "\n";
+                SerializeUtility.SerializeWorldIntoYAML(em, writer, false); // is yaml just debugging?
+            }
+            
+            {
+                // json make asset map json file
+                var path = _FileLocation + "\\" + "assetmap.json";;
+                var jsondata = JsonUtility.ToJson(AssetMapUtilities.UpdateAddressables(), true);
+                File.WriteAllText(path, jsondata);
+            }
         }
     }
 
