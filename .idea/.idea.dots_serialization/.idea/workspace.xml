@@ -20,8 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +42,28 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.8.4/Editor/AddressableAssetSettingsDefaultObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/AssetMapSubAssetsRule.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D302EE0B-7FCD-4D81-84C0-FE84F62C3CC1/42/da577249/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs1" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3F320969-2671-46D3-AEAA-DEA90DEA3CDD/b7/35109a0f/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Saved/DefaultWorldReferences.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.0-preview.7/Unity.Entities.Hybrid/ReferencedUnityObjects.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.11.0-preview.7/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DogAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D302EE0B-7FCD-4D81-84C0-FE84F62C3CC1/42/da577249/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/bd/d5cf516a/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs1" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/f9/9de393eb/ICollection`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/SceneData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/AddressableDataQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.8.4/Editor/Settings/AddressableAssetEntry.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Saved/DefaultWorldReferences.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6AE55ED-050F-4FDE-967E-441DEB23C5E5/33/f20b96f9/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SaveLoad/Scripts/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DogAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SaveLoad/Scripts/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,9 +74,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/SaveUtilities.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/tyedg.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AddressableMap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +101,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -107,7 +124,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591658169524</updated>
-      <workItem from="1591658187555" duration="11673000" />
+      <workItem from="1591658187555" duration="11778000" />
+      <workItem from="1591716235880" duration="9386000" />
     </task>
     <servers />
   </component>
@@ -126,12 +144,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="647" y="337" key="#Notifications" timestamp="1591718151531">
+      <screen x="0" y="0" width="1563" height="1002" />
+    </state>
+    <state x="647" y="337" key="#Notifications/0.0.1563.1002@0.0.1563.1002" timestamp="1591718151531" />
+    <state x="291" y="146" key="SettingsEditor" timestamp="1591716190927">
+      <screen x="0" y="0" width="1563" height="1002" />
+    </state>
+    <state x="291" y="146" key="SettingsEditor/0.0.1563.1002@0.0.1563.1002" timestamp="1591716190927" />
     <state x="454" y="100" width="654" height="801" key="find.popup" timestamp="1591679092441">
       <screen x="0" y="0" width="1563" height="1002" />
     </state>
@@ -140,5 +167,9 @@
       <screen x="0" y="0" width="1563" height="1002" />
     </state>
     <state x="439" y="231" key="run.anything.popup/0.0.1563.1002@0.0.1563.1002" timestamp="1591679442956" />
+    <state x="444" y="216" width="672" height="678" key="search.everywhere.popup" timestamp="1591724559090">
+      <screen x="0" y="0" width="1563" height="1002" />
+    </state>
+    <state x="444" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1563.1002@0.0.1563.1002" timestamp="1591724559090" />
   </component>
 </project>

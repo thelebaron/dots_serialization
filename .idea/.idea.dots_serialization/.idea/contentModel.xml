@@ -21,6 +21,7 @@
           <e p="Discord" t="Include">
             <e p="AssetMap.cs" t="Include" />
             <e p="AssetMapSubAssetsRule.cs" t="Include" />
+            <e p="WorldReferenceObjects.cs" t="Include" />
           </e>
           <e p="DogAuthoring.cs" t="Include" />
           <e p="DummyScripts" t="Include">

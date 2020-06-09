@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace DOTS.Serialization
 {
+    /// <summary>
+    /// A map listing of a key: the name+type and address: addressable address
+    /// </summary>
     [System.Serializable]
     public class AssetMap
     {
@@ -16,5 +19,21 @@ namespace DOTS.Serialization
         }
     }
 
-
+    /// <summary>
+    /// Stores a list of UObjects
+    /// </summary>
+    [System.Serializable]
+    public class WObjects
+    {
+        public UObject[] Objects;
+    }
+    /// <summary>
+    /// Managed UnityObject with a type and an addressable address.
+    /// </summary>
+    [System.Serializable]
+    public class UObject
+    {
+        public string Address { get; set; }
+        public Type Type { get; set; }
+    }
 }

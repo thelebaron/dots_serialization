@@ -186,16 +186,59 @@ public class XMLEditor : Editor
         
         // DOTS Save world
         if(World.All.Count<1) return;
-        using (var writer = new StreamWriter(yamlpath))
-        {
+        //using (var writer = new StreamWriter(yamlpath))
+        //{
             // Path for saving world
             var binaryWorldPath =  _FileLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
             var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
                     
             // Save whole world
-            // not hybrid SerializeUtility.SerializeWorld(em, binaryWriter, out var objectReferences);
             var referencedObjectsPath =  "Assets/ReferencedUnityWorldObjects.asset";// path forward slash for asset access
             SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects objectReferences);
+            //SerializeUtility.SerializeWorld(em, binaryWriter, out var objectReferences);
+            
+            // more serialization: note serializeHybrid always gives unityobject types
+            {
+                // gather referenced objects
+                var worldObjects = new WObjects()
+                {
+                    Objects = new UObject[objectReferences.Array.Length]
+                };
+                for (int i = 0; i < objectReferences.Array.Length; i++)
+                {
+                    var currentObject = objectReferences.Array[i];
+                    //ignore if not unity object
+                    //if(referencedObject is UnityEngine.Object uObject) //if (!(myVariable is SomeType))
+                    var key = AssetMapUtilities.GetKey(currentObject);
+                    string address = null;
+
+                    var serializedAssetMap = AssetMapUtilities.GetSavedAssetMap();
+                    //if(serializedAssetMap.AssetMapping.Contains())
+                    /*
+                    foreach (var assetMap in _contentContainer.AssetMaps)
+                    {
+                        if (assetMap.AssetIdToAddress.ContainsKey(key))
+                        {
+                            address = assetMap.AssetIdToAddress[key];
+                            break;
+                        }
+                    }
+                    
+                    if (!string.IsNullOrWhiteSpace(address))
+                    {
+                        worldReferenceObjects.Objects[i] = new AddressableWorldReferenceObject()
+                        {
+                            Address = address,
+                            Type = uObject.GetType()
+                        };
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Oh noes, Address for {key} {uObject.GetType()} was not found");
+                    }*/
+                    
+                }
+            }
             binaryWriter.Dispose();
             
             // For debugging: log all referenced objects which are saved QueryReferences.Query(objectReferences);
@@ -206,9 +249,9 @@ public class XMLEditor : Editor
             var xm   = zx.GetComponent<MeshFilter>();
             var m    = xm.sharedMesh;
             var code = m.GetHashCode();*/
-        }
+        //}
         
-        formatter.Serialize(saveFile,objects);
+        formatter.Serialize(saveFile, objects);
     }
 
     private void LoadData()
@@ -276,6 +319,45 @@ public class XMLEditor : Editor
     } */
     
     /*
+     
+    private void SaveData()
+    {
+        if (!Directory.Exists("Saves"))
+            Directory.CreateDirectory("Saves");
+        
+        var formatter = new BinaryFormatter();
+        var objects = new List<System.Object>();
+        var saveFile = File.Create("Saves/Save.bin");
+        
+        // DOTS Save world
+        if(World.All.Count<1) return;
+        using (var writer = new StreamWriter(yamlpath))
+        {
+            // Path for saving world
+            var binaryWorldPath =  _FileLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
+            var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
+                    
+            // Save whole world
+            // not hybrid SerializeUtility.SerializeWorld(em, binaryWriter, out var objectReferences);
+            var referencedObjectsPath =  "Assets/ReferencedUnityWorldObjects.asset";// path forward slash for asset access
+            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects objectReferences);
+            binaryWriter.Dispose();
+            
+            // For debugging: log all referenced objects which are saved QueryReferences.Query(objectReferences);
+            AssetDatabase.CreateAsset(objectReferences, referencedObjectsPath);
+            objects.Add(objectReferences);
+            
+            /*var zx   = GameObject.Find("test");
+            var xm   = zx.GetComponent<MeshFilter>();
+            var m    = xm.sharedMesh;
+            var code = m.GetHashCode();
+        }
+                
+        formatter.Serialize(saveFile,objects);
+        } 
+     
+     
+     
     void SaveToXml()
     {            
         string path = EditorUtility.SaveFilePanel("Save the database to XML file.", "", "ItemDatabase.xml", ".xml");            
@@ -330,7 +412,17 @@ public class XMLEditor : Editor
         {
             Debug.LogException(e);
         }
-    }*/
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    */
 }
 
 
