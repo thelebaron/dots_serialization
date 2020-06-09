@@ -8,8 +8,7 @@ using UnityEngine.AddressableAssets;
 namespace DOTS.Serialization
 {
     public static class AssetMapUtilities
-    {
-                
+    { 
         public static string GetKey(UnityEngine.Object obj)
         {
             //var guid = StringToGUID(name);
@@ -22,6 +21,7 @@ namespace DOTS.Serialization
         [MenuItem("Serialize/UpdateAddressables")]
         public static AssetMap UpdateAddressables()
         {
+            //use default group for now
             //Debug.Log(UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.groups[1].entries.Count);
             
             var map = new AssetMap

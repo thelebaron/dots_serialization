@@ -20,70 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/.idea.dots_serialization.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AssetMap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/AssetMap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/AssetMap.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/AssetMap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/AssetMap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/AssetMapSubAssetsRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Discord/AssetMapSubAssetsRule.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/Newtonsoft.Json.12.0.3.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/packageIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saves/Save.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Saves/assetmap.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultWorld.world" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultWorld.world" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DummyMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DummyMoveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyMoveSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/AddressableDataQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/AddressableDataQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntitiesWorldSerialization.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XMLEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591658169524</updated>
-      <workItem from="1591658187555" duration="10954000" />
+      <workItem from="1591658187555" duration="11673000" />
     </task>
     <servers />
   </component>
