@@ -4,17 +4,10 @@
     <e p="C:\Users\thele\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\thele\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_dots_serialization.-1402301076.00" t="ExcludeRecursive" />
     <e p="C:\Users\thele\Documents\Repos\dots_serialization" t="IncludeRecursive">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="SaveData.xml" t="Include" />
-        <e p="SaveLoad" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="GameHandler.cs" t="Include" />
-            <e p="IUnit.cs" t="Include" />
-            <e p="SaveSystem.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="AssetMap.cs" t="Include" />
           <e p="BinarySerialization.cs" t="Include" />
@@ -23,10 +16,9 @@
             <e p="AssetMapSubAssetsRule.cs" t="Include" />
             <e p="WorldReferenceObjects.cs" t="Include" />
           </e>
-          <e p="DogAuthoring.cs" t="Include" />
           <e p="DummyScripts" t="Include">
-            <e p="AddressableDataQuery.cs" t="Include" />
             <e p="CameraAuthoring.cs" t="Include" />
+            <e p="DogAuthoring.cs" t="Include" />
             <e p="DummyMoveSystem.cs" t="Include" />
             <e p="ManagedDummyClassAuthoring.cs" t="Include" />
             <e p="SaveScriptableObject.cs" t="Include" />
@@ -36,9 +28,10 @@
             <e p="AssetMapUtilities.cs" t="Include" />
             <e p="XMLEditor.cs" t="Include" />
           </e>
+          <e p="EntityAsset.cs" t="Include" />
           <e p="NewComponent.cs" t="Include" />
           <e p="QueryReferences.cs" t="Include" />
-          <e p="WorldManagement.cs" t="Include" />
+          <e p="TestObjectSerialization.cs" t="Include" />
         </e>
       </e>
       <e p="dots_serialization.sln" t="IncludeFlat" />

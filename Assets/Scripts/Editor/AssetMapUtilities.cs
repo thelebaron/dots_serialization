@@ -28,26 +28,28 @@ namespace DOTS.Serialization
         /// Updates assetmap with all current addressables in the default addressableassetentries group.
         /// </summary>
         /// <returns></returns>
-        [MenuItem("Serialize/UpdateAddressables")]
-        public static AssetMap UpdateAddressables()
+        [MenuItem("Serialize/UpdateAssetMap")]
+        public static AssetMap UpdateAssetMap()
         {
             //use default group for now
             //Debug.Log(UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.groups[1].entries.Count);
             
-            var map = new AssetMap
-            {
-                AssetMapping = new List<AssetMap.AssetKey>()
-            };
+            var map = new AssetMap();
 
-            var addressableAssetEntries = DefaultAddressableAssetEntries();
+            var addressableAssetEntries = UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings
+                .groups[1].entries;//DefaultAddressableAssetEntries();
             
             foreach (var assetEntry in addressableAssetEntries)
             {
                 Debug.Log(assetEntry.MainAsset);
                 var id = GetAssetKey(assetEntry);
-                
-                if(!map.AssetMapping.Contains(id))
-                    map.AssetMapping.Add(id);
+                var key = GetKey(assetEntry.MainAsset);
+                var address = assetEntry.address;
+
+                if (!map.AssetMapping.Contains(GetAssetKey(assetEntry)))
+                {
+                    map.AssetMapping.Add(GetAssetKey(assetEntry));
+                }
                 
             }
 
@@ -85,7 +87,7 @@ namespace DOTS.Serialization
                 Directory.CreateDirectory("Assets/Saves");
             // json make asset map json file
             var path = "Assets" + "\\"+ "Saves"+ "\\" + "AssetMap.json";
-            var jsondata = JsonUtility.ToJson(UpdateAddressables(), true);
+            var jsondata = JsonUtility.ToJson(UpdateAssetMap(), true);
             File.WriteAllText(path, jsondata);
             
 #if UNITY_EDITOR
@@ -101,12 +103,14 @@ namespace DOTS.Serialization
         {
             var json = File.ReadAllText(Application.dataPath + "/Saves/AssetMap.json");
             AssetMap assetMap = JsonUtility.FromJson<AssetMap>(json);
-            
-            foreach (var assetkey in assetMap.AssetMapping)
+            Debug.Log(assetMap);
+            foreach (var pair in assetMap.AssetMapping)
             {
-                Debug.Log(assetkey.Key + " <key - address> " + assetkey.Address);
+                var key = pair.Key;
+                var address = pair.Address;
+                Debug.Log(pair.Key + " <key - address> " + address);
                 
-                var load = Addressables.LoadAssetAsync<Object>(assetkey.Address);
+                var load = Addressables.LoadAssetAsync<Object>(address);
                 //yield return load; // i think this is necessary
                 var result = load.Result;
                 if(result!=null)

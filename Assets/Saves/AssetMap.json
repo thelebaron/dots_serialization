@@ -1,6 +1,10 @@
 {
     "AssetMapping": [
         {
+            "Key": "DogCubePrefabUnityEngine.GameObject",
+            "Address": "Assets/DummyContent/DogCubePrefab.prefab"
+        },
+        {
             "Key": "AcUnit_diffuseUnityEngine.Texture2D",
             "Address": "Assets/DummyContent/AcUnit_diffuse.tga"
         },

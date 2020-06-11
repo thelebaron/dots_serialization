@@ -9,6 +9,7 @@ using DOTS.Serialization;
 using Unity.Entities;
 using Unity.Entities.Serialization;
 using Unity.Physics.Systems;
+using Unity.Rendering;
 using UnityEditor;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
@@ -64,10 +65,11 @@ public class XMLEditor : Editor
         
         if (GUILayout.Button("Save"))
         {
-            DisablePhysicsSystemForSaving();
-            SaveJsonYamlXml(script);
+            TogglePhysicsSystemForSaving(false);
             SaveData();
+            TogglePhysicsSystemForSaving(true);
 
+            //SaveJsonYamlXml(script);
 
             Debug.Log("Saved");
         }
@@ -120,16 +122,6 @@ public class XMLEditor : Editor
             }
         }
 
-        if (GUILayout.Button("new save"))
-        {
-            WorldManagement.Save();
-        }
-
-        if (GUILayout.Button("new Load"))
-        {
-            WorldManagement.Load();
-        }
-
         DrawDefaultInspector();
     }
 
@@ -159,20 +151,20 @@ public class XMLEditor : Editor
                 writer.NewLine = "\n";
                 SerializeUtility.SerializeWorldIntoYAML(em, writer, false); // is yaml just debugging?
             }
-            
+            /*
             {
                 // json make asset map json file
                 var path = _FileLocation + "\\" + "assetmap.json";;
                 var jsondata = JsonUtility.ToJson(AssetMapUtilities.UpdateAddressables(), true);
                 File.WriteAllText(path, jsondata);
-            }
+            }*/
         }
     }
 
-    private static void DisablePhysicsSystemForSaving()
+    private static void TogglePhysicsSystemForSaving(bool enabled)
     {
         var x = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<BuildPhysicsWorld>();
-        x.Enabled = false;
+        x.Enabled = enabled;
     }
 
     private void SaveData()
@@ -181,7 +173,7 @@ public class XMLEditor : Editor
             Directory.CreateDirectory("Saves");
         
         var formatter = new BinaryFormatter();
-        var objects = new List<System.Object>();
+        //var objects = new List<System.Object>();
         var saveFile = File.Create("Saves/Save.bin");
         
         // DOTS Save world
@@ -191,67 +183,56 @@ public class XMLEditor : Editor
             // Path for saving world
             var binaryWorldPath =  _FileLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
             var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
-                    
+            
             // Save whole world
-            var referencedObjectsPath =  "Assets/ReferencedUnityWorldObjects.asset";// path forward slash for asset access
-            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects objectReferences);
+            string referencedObjectsPath =  "Assets/ReferencedUnityWorldObjects.asset";// path forward slash for asset access
+            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
             //SerializeUtility.SerializeWorld(em, binaryWriter, out var objectReferences);
+
+            for (int i = 0; i < referencedUnityObjects.Array.Length; i++)
+            {
+                Debug.Log(referencedUnityObjects.Array[i].name);
+            }
             
             // more serialization: note serializeHybrid always gives unityobject types
-            {
+            /*{
                 // gather referenced objects
-                var worldObjects = new WObjects()
+                WObjects worldObjects = new WObjects
                 {
                     Objects = new UObject[objectReferences.Array.Length]
                 };
                 for (int i = 0; i < objectReferences.Array.Length; i++)
                 {
-                    var currentObject = objectReferences.Array[i];
+                    UnityEngine.Object obj = objectReferences.Array[i];
                     //ignore if not unity object
                     //if(referencedObject is UnityEngine.Object uObject) //if (!(myVariable is SomeType))
-                    var key = AssetMapUtilities.GetKey(currentObject);
+                    string key = AssetMapUtilities.GetKey(obj);
                     string address = null;
 
-                    var serializedAssetMap = AssetMapUtilities.GetSavedAssetMap();
-                    //if(serializedAssetMap.AssetMapping.Contains())
-                    /*
-                    foreach (var assetMap in _contentContainer.AssetMaps)
+                    Dictionary<string, string> serializedAssetMap = AssetMapUtilities.GetSavedAssetMap().AssetMapping;
+                    if (serializedAssetMap.ContainsKey(key))
                     {
-                        if (assetMap.AssetIdToAddress.ContainsKey(key))
-                        {
-                            address = assetMap.AssetIdToAddress[key];
-                            break;
-                        }
+                        Debug.Log("found match");
                     }
-                    
-                    if (!string.IsNullOrWhiteSpace(address))
-                    {
-                        worldReferenceObjects.Objects[i] = new AddressableWorldReferenceObject()
-                        {
-                            Address = address,
-                            Type = uObject.GetType()
-                        };
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"Oh noes, Address for {key} {uObject.GetType()} was not found");
-                    }*/
-                    
                 }
+            }*/
+            foreach (var obj in referencedUnityObjects.Array)
+            {
+                Debug.Log(obj.GetType());
+                
             }
-            binaryWriter.Dispose();
+            var rm = new RenderMesh();
+            Debug.Log(rm.GetType());
             
             // For debugging: log all referenced objects which are saved QueryReferences.Query(objectReferences);
-            AssetDatabase.CreateAsset(objectReferences, referencedObjectsPath);
-            objects.Add(objectReferences);
+            AssetDatabase.CreateAsset(referencedUnityObjects, referencedObjectsPath);
+            binaryWriter.Dispose();
+            //objects.Add(objectReferences);
             
-            /*var zx   = GameObject.Find("test");
-            var xm   = zx.GetComponent<MeshFilter>();
-            var m    = xm.sharedMesh;
-            var code = m.GetHashCode();*/
         //}
         
-        formatter.Serialize(saveFile, objects);
+        // objects is not a serializable thing
+        //formatter.Serialize(saveFile, objects);
     }
 
     private void LoadData()
@@ -261,11 +242,11 @@ public class XMLEditor : Editor
         if(World.All.Count<1) 
             return;
         
-        var formatter = new BinaryFormatter();
-        var saveFile = File.Open("Saves/Save.bin", FileMode.Open);
-        var deserializedObject = formatter.Deserialize(saveFile);
-        var objects = deserializedObject as List<Object>;
-        var refObjects = objects[0] as ReferencedUnityObjects;
+        //var formatter = new BinaryFormatter();
+        //var saveFile = File.Open("Saves/Save.bin", FileMode.Open);
+        //var deserializedObject = formatter.Deserialize(saveFile);
+        //var objects = deserializedObject as List<Object>;
+        //var refObjects = objects[0] as ReferencedUnityObjects;
         
         // To generate the file we'll test against
         var binaryPath =  _FileLocation + "\\" + "DefaultWorld.world";
@@ -273,12 +254,14 @@ public class XMLEditor : Editor
         // need an empty world to do this
         var loadingWorld = new World("SavingWorld");
         var em           = loadingWorld.EntityManager;
+        
         using (var reader = new StreamBinaryReader(binaryPath)) //GetFullPathByName(fileName))
         {
             var referencedObjectsPath =  "Assets/ReferencedUnityWorldObjects.asset";// path forward slash for asset access
             var objectRefAsset        = AssetDatabase.LoadAssetAtPath<ReferencedUnityObjects>(referencedObjectsPath);
             // Load objects as binary file
-            SerializeUtilityHybrid.Deserialize(em, reader, refObjects);
+            SerializeUtilityHybrid.Deserialize(em, reader, objectRefAsset);
+            
         }
             
             

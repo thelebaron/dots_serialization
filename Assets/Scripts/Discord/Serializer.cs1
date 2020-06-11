@@ -57,3 +57,39 @@ namespace Game.Mods
         }
     }
 }
+
+
+var referenceJson = File.ReadAllText(Path.Combine(_pathRoot, _path2));
+
+        var settings = new JsonSerializerSettings();
+        settings.TypeNameHandling = TypeNameHandling.Auto;
+        settings.Converters.Add(new TypeConverter());
+
+        var referenceObjectsContainer = JsonConvert.DeserializeObject<WorldReferenceObjects>(referenceJson, settings);
+        var referenceObjects = new UnityEngine.Object[referenceObjectsContainer.Objects.Length];
+        for (var index = 0; index < referenceObjectsContainer.Objects.Length; index++)
+        {
+            var worldReferenceObjectBase = referenceObjectsContainer.Objects[index];
+
+            if (worldReferenceObjectBase is AddressableWorldReferenceObject addressable)
+            {
+                Object result;
+                //mesh is evil
+                if (addressable.Type == typeof(Mesh))
+                {
+                    var load = Addressables.LoadAssetAsync<Mesh>(addressable.Address);
+                    yield return load;
+                    result = load.Result;
+                }
+                else
+                {
+                    var load = Addressables.LoadAssetAsync<Object>(addressable.Address);
+                    yield return load;
+
+                    result = load.Result;
+                }
+
+
+                referenceObjects[index] = result;
+            }
+        }

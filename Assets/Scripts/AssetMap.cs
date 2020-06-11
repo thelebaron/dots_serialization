@@ -10,7 +10,7 @@ namespace DOTS.Serialization
     [System.Serializable]
     public class AssetMap
     {
-        [SerializeField] public List<AssetKey> AssetMapping;// { get; private set; }
+        [SerializeField] public List<AssetKey> AssetMapping = new List<AssetKey>();// { get; private set; }
         [System.Serializable]
         public class AssetKey
         {
