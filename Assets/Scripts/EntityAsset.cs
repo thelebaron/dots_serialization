@@ -1,5 +1,7 @@
 ﻿using System;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -15,12 +17,14 @@ using UnityEngine.AddressableAssets;
         public AssetReference Asset => _asset;
         public AssetReference Material => _material;
 
-
+#if UNITY_EDITOR
+        
         [MenuItem("Serialize/Create Entity Asset")]
         public static void CreateAsset()
         {
             AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<EntitySettings>(), "Assets/mydotsasset.asset");
         }
+#endif
     }
  
     

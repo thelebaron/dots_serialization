@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8075e36325ed35a4684892dfcdc328ba, type: 3}
-  m_Name: ReferencedUnityWorldObjects
+  m_Name: UnityObjects
   m_EditorClassIdentifier: 
   Array:
   - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}

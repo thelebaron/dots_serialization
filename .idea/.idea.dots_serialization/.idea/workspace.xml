@@ -20,36 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DefaultWorld.world" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DefaultWorld.world.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PersistentObjects.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PersistentObjects.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityObjects.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UnityObjects.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/SceneData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyScripts/SceneData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultWorld.world" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultWorld.world.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mydotsasset.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mydotsasset.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +56,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DogAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Blobs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs1" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CF1E0A71-FE90-49FB-9D84-D2CB66A2E3B2/d6/ec39069d/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,13 +67,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/SceneData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/6c/93929bac/Guid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38CE1190-01C9-46F1-AA8D-B3FBA67839F5/99/d2bfff82/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/SerializeUtilityHybrid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/ReferencedUnityObjects.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/EntityRemapUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Saves/AssetMap.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestObjectSerialization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38CE1190-01C9-46F1-AA8D-B3FBA67839F5/7a/bb2e7c50/PrefabAssetType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38CE1190-01C9-46F1-AA8D-B3FBA67839F5/f8/581e9ff7/PrefabUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -101,14 +98,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DummyScripts/DogAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestObjectSerialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentUniqueID.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/ReferencedObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DummyScripts/SceneData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
       </list>
     </option>
@@ -163,7 +161,7 @@
       <workItem from="1593018806155" duration="629000" />
       <workItem from="1593452256918" duration="690000" />
       <workItem from="1593453348003" duration="518000" />
-      <workItem from="1596929893727" duration="7111000" />
+      <workItem from="1596929893727" duration="19618000" />
     </task>
     <servers />
   </component>
