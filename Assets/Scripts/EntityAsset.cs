@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-[Serializable]
+    [Serializable]
     public class EntityAsset
     {
         [SerializeField]

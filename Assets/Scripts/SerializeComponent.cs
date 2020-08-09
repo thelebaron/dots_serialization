@@ -22,7 +22,7 @@ public struct MyData
     //public GameObject _prefab;
 }
 
-public class NewComponent : MonoBehaviour, IConvertGameObjectToEntity
+public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
 {
     public bool saveOnStart = true;
     public bool useYaml;
@@ -37,12 +37,9 @@ public class NewComponent : MonoBehaviour, IConvertGameObjectToEntity
     {
         _w.WriteStartElement("Item");
         _w.WriteAttributeString("Name", myData._name);
-        //_w.WriteAttributeString("ItemType", ((int)myData._itemType).ToString());
         _w.WriteAttributeString("UniqueID", myData._uniqueID.ToString());                                  
         _w.WriteAttributeString("Description", myData._description);
         _w.WriteAttributeString("VendorPrice", myData._vendorPrice.ToString());
-        //_w.WriteAttributeString("Icon", AssetDatabase.GetAssetPath(myData._icon));
-        //_w.WriteAttributeString("Prefab", AssetDatabase.GetAssetPath(myData._prefab));
         _w.WriteAttributeString("Moddable", myData._moddable.ToString());
         _w.WriteAttributeString("RecoilCompensation", myData._RecoilCompensation.ToString());
         _w.WriteAttributeString("Semi-Auto", myData._allowedFireModes[0].ToString());
@@ -90,6 +87,15 @@ public class NewComponent : MonoBehaviour, IConvertGameObjectToEntity
             if(hidden[i].hideFlags != HideFlags.None)
                 HiddenGameObjects.Add(hidden[i]);
         }
+    }
+    
+    void OnGUI()
+    {
+        if (GUI.Button(new Rect(100, 100, 500, 500), "Click"))
+            Debug.Log("Clicked the button with an image");
+
+        if (GUI.Button(new Rect(100, 700, 500, 300), "Click"))
+            Debug.Log("Clicked the button with text");
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using Unity.Entities;
+using Unity.Scenes;
 using UnityEngine;
 
 public static class QueryReferences

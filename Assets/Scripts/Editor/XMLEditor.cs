@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
-using DefaultNamespace;
-using DOTS.Serialization;
 using Unity.Entities;
 using Unity.Entities.Serialization;
 using Unity.Physics.Systems;
 using Unity.Rendering;
+using Unity.Scenes;
 using UnityEditor;
-using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
-using Object = System.Object;
 
-[CustomEditor(typeof(NewComponent))]
+[CustomEditor(typeof(SerializeComponent))]
 [CanEditMultipleObjects]
 public class XMLEditor : Editor
 {
@@ -24,7 +20,9 @@ public class XMLEditor : Editor
     private string xmlpath;
     private string yamlpath;
     private EntityManager em;
+    
 
+    
     private void OnEnable()
     {
         _FileLocation = Application.dataPath; 
@@ -43,12 +41,12 @@ public class XMLEditor : Editor
 
     private void OnSceneGUI()
     {
-        var node = target as NewComponent;
+        var node = target as SerializeComponent;
     }
 
     public override void OnInspectorGUI()
     {
-        var script = target as NewComponent;
+        var script = target as SerializeComponent;
         if (script.saveOnStart)
         {
             Save();
@@ -60,7 +58,14 @@ public class XMLEditor : Editor
         
         if (GUILayout.Button("Destroy All Entities"))
         {
+            if(World.All.Count<1)
+                return;
             World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery);
+        }
+                
+        if (GUILayout.Button("Load"))
+        {
+            LoadData();
         }
         
         if (GUILayout.Button("Save"))
@@ -73,12 +78,7 @@ public class XMLEditor : Editor
 
             Debug.Log("Saved");
         }
-        
-        if (GUILayout.Button("Load"))
-        {
-            LoadData();
-        }
-        
+
         // Save gameobjects to binary file
         if (GUILayout.Button("Destroy GameObjects"))
         {
@@ -125,7 +125,7 @@ public class XMLEditor : Editor
         DrawDefaultInspector();
     }
 
-    private void SaveJsonYamlXml(NewComponent script)
+    private void SaveJsonYamlXml(SerializeComponent script)
     {
         {
             //xml
@@ -163,6 +163,8 @@ public class XMLEditor : Editor
 
     private static void TogglePhysicsSystemForSaving(bool enabled)
     {
+        if(!Application.isPlaying)
+            return;
         var x = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<BuildPhysicsWorld>();
         x.Enabled = enabled;
     }
@@ -175,6 +177,7 @@ public class XMLEditor : Editor
         var formatter = new BinaryFormatter();
         //var objects = new List<System.Object>();
         var saveFile = File.Create("Saves/Save.bin");
+        AssetDatabase.Refresh();
         
         // DOTS Save world
         if(World.All.Count<1) return;
