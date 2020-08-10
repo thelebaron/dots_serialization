@@ -102,6 +102,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         // pos x,y, size x,y
         if (GUI.Button(new Rect(15, 50, 100, 35), "Save"))
         {
+            em.CompleteAllJobs();
             TogglePhysicsSystemForSaving(false);
             SaveData();
             TogglePhysicsSystemForSaving(true);
@@ -110,6 +111,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
 
         if (GUI.Button(new Rect(15, 100, 100, 35), "Load"))
         {
+            em.CompleteAllJobs();
             LoadData();
         }
 
@@ -118,7 +120,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             if(World.All.Count<1)
                 return;
             
-            em.CompleteAllJobs();
+            World.DefaultGameObjectInjectionWorld.EntityManager.CompleteAllJobs();
             
             World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery);
         }

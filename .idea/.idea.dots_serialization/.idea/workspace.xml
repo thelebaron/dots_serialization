@@ -20,26 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UnityObjects.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UnityObjects.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BinaryObjectsSaveFile.binary.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultWorld.world" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultWorld.world.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ReferencedUnityWorldObjects.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saves/DefaultWorld.world" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +147,7 @@
       <workItem from="1593018806155" duration="629000" />
       <workItem from="1593452256918" duration="690000" />
       <workItem from="1593453348003" duration="518000" />
-      <workItem from="1596929893727" duration="19618000" />
+      <workItem from="1596929893727" duration="21670000" />
     </task>
     <servers />
   </component>
