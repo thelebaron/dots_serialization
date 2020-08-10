@@ -1,24 +1,29 @@
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using Unity.Entities;
 using UnityEngine;
 using Object = UnityEngine.Object;
-
-#if UNITY_EDITOR
-using DOTS.Serialization.ReferencedObjects;
 using Unity.Scenes;
+#if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.AddressableAssets.Settings;
-using UnityEngine.UIElements;
+using DOTS.Serialization.ReferencedObjects;
+#endif
 
 public class PersistentObjects : ScriptableObject
 {
     public Object Target;
     public ReferencedUnityObjects ReferencedUnityObjects;
     public List<EntityObject> Assets;
+
+    public static ReferencedUnityObjects RemappedObjects()
+    {
+        var objRefs = UnityEngine. ScriptableObject. CreateInstance<ReferencedUnityObjects>();
+        // find and compare with json
+        return null;
+    }
+    
+#if UNITY_EDITOR
     
     [MenuItem("SerializeNew/Create PersistentObjects")]
     public static void CreateAsset()
@@ -38,7 +43,6 @@ public class PersistentObjects : ScriptableObject
         
         entityObject.referencedObject = Target;
         entityObject.id = id;
-        entityObject.type = Target.GetType();
         Assets.Add(entityObject);
     }
 
@@ -71,7 +75,7 @@ public class PersistentObjects : ScriptableObject
     {
         Assets ??= new List<EntityObject>();
         Assets?.Clear();
-        var assets = AssetDatabaseUtility.GetEverything();
+        var assets = EditorAssetDatabaseUtility.GetEverything();
 
         foreach (var obj in assets)
         {
@@ -80,24 +84,16 @@ public class PersistentObjects : ScriptableObject
         
             entityObject.referencedObject = obj;
             entityObject.id               = id;
-            entityObject.type             = Target.GetType();
             Assets.Add(entityObject);
         }
     }
-
-}
 #endif
+}
 
 [Serializable]
 public class EntityObject
 {
     public Object referencedObject;
-    public Type type;
     public int id;
-}
-
-public struct SerialzedReference : IComponentData
-{
-    public int Id;
 }
 

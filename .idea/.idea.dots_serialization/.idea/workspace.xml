@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DummyJsonifiedData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DummyJsonifiedData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/SerializedReferences.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/SerializedReferences.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Saves/AssetMap.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Saves/AssetMap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/EditorAssetDatabaseUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/EditorAssetDatabaseUtility.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Blobs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/Serializer.cs1" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DummyJsonifiedData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/WorldReferenceObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CF1E0A71-FE90-49FB-9D84-D2CB66A2E3B2/d6/ec39069d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Discord/AssetMapSubAssetsRule.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,14 +63,18 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/SerializeUtilityHybrid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/ReferencedUnityObjects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/EntityRemapUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/EditorAssetDatabaseUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CF1E0A71-FE90-49FB-9D84-D2CB66A2E3B2/0e/fe5f720b/PrimitiveType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.14/UnityEditor.TestRunner/GUI/IAssetsDatabaseHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Saves/AssetMap.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/SerializedReferences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestObjectSerialization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38CE1190-01C9-46F1-AA8D-B3FBA67839F5/7a/bb2e7c50/PrefabAssetType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BinarySerialization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/11BD515F-D2A0-4526-8509-D23726DE0F46/52/5193b18b/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38CE1190-01C9-46F1-AA8D-B3FBA67839F5/f8/581e9ff7/PrefabUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -93,10 +103,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NewComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrimitiveHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetDatabaseUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/PersistentObjects.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/EditorAssetDatabaseUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DummyJsonifiedData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/SerializedReferences.cs" />
       </list>
     </option>
   </component>
@@ -150,7 +164,7 @@
       <workItem from="1593018806155" duration="629000" />
       <workItem from="1593452256918" duration="690000" />
       <workItem from="1593453348003" duration="518000" />
-      <workItem from="1596929893727" duration="22777000" />
+      <workItem from="1596929893727" duration="30100000" />
     </task>
     <servers />
   </component>
@@ -184,18 +198,19 @@
       <screen x="0" y="0" width="1563" height="1002" />
     </state>
     <state x="291" y="146" key="SettingsEditor/0.0.1563.1002@0.0.1563.1002" timestamp="1591716190927" />
-    <state x="558" y="104" width="804" height="832" key="find.popup" timestamp="1596996423708">
+    <state x="558" y="104" width="804" height="832" key="find.popup" timestamp="1597035750585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="454" y="100" width="654" height="801" key="find.popup/0.0.1563.1002@0.0.1563.1002" timestamp="1591740136008" />
-    <state x="558" y="104" width="804" height="832" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596996423708" />
+    <state x="558" y="104" width="804" height="832" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597035750585" />
     <state x="439" y="231" key="run.anything.popup" timestamp="1591679442956">
       <screen x="0" y="0" width="1563" height="1002" />
     </state>
     <state x="439" y="231" key="run.anything.popup/0.0.1563.1002@0.0.1563.1002" timestamp="1591679442956" />
-    <state x="444" y="216" width="672" height="678" key="search.everywhere.popup" timestamp="1591724559090">
-      <screen x="0" y="0" width="1563" height="1002" />
+    <state x="545" y="224" width="826" height="704" key="search.everywhere.popup" timestamp="1597035426796">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="444" y="216" width="672" height="678" key="search.everywhere.popup/0.0.1563.1002@0.0.1563.1002" timestamp="1591724559090" />
+    <state x="545" y="224" width="826" height="704" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597035426796" />
   </component>
 </project>

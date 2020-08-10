@@ -40,5 +40,13 @@ namespace DOTS.Serialization
             PrimitiveHelper.primitiveMeshes[type] = mesh;
             return mesh;
         }
+
+        public static Material DefaultMaterial()
+        {
+            var gameObject = GameObject.CreatePrimitive(PrimitiveType.Plane);
+            var mat       = gameObject.GetComponent<MeshRenderer>().sharedMaterial;
+            Object.DestroyImmediate(gameObject);;
+            return mat;
+        }
     }
 }

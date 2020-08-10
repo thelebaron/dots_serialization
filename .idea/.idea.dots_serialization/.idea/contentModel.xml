@@ -30,8 +30,10 @@
           <e p="EntityAsset.cs" t="Include" />
           <e p="QueryReferences.cs" t="Include" />
           <e p="ReferencedObjects" t="Include">
-            <e p="AssetDatabaseUtility.cs" t="Include" />
+            <e p="DummyJsonifiedData.cs" t="Include" />
+            <e p="EditorAssetDatabaseUtility.cs" t="Include" />
             <e p="PersistentObjects.cs" t="Include" />
+            <e p="SerializedReferences.cs" t="Include" />
           </e>
           <e p="SerializeComponent.cs" t="Include" />
           <e p="TemporaryMenu.cs" t="Include" />

@@ -1,20 +1,60 @@
 {
-    "AssetMapping": [
+    "Array": [
         {
-            "Key": "DogCubePrefabUnityEngine.GameObject",
-            "Address": "Assets/DummyContent/DogCubePrefab.prefab"
+            "Name": "Capsule",
+            "Id": 502
         },
         {
-            "Key": "AcUnit_diffuseUnityEngine.Texture2D",
-            "Address": "Assets/DummyContent/AcUnit_diffuse.tga"
+            "Name": "Default-Material",
+            "Id": 644
         },
         {
-            "Key": "AcUnit_diffuseUnityEngine.Material",
-            "Address": "Assets/DummyContent/Materials/AcUnit_diffuse.mat"
+            "Name": "Sphere",
+            "Id": 500
         },
         {
-            "Key": "AcUnitUnityEngine.GameObject",
-            "Address": "Assets/DummyContent/AcUnit.fbx"
+            "Name": "Cube",
+            "Id": 496
+        },
+        {
+            "Name": "Plane",
+            "Id": 504
+        },
+        {
+            "Name": "AcUnit_Fan",
+            "Id": 19204
+        },
+        {
+            "Name": "blinn2",
+            "Id": 19220
+        },
+        {
+            "Name": "AcUnit_diffuse",
+            "Id": 19200
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
+        },
+        {
+            "Name": "AcUnit",
+            "Id": 19222
         }
     ]
 }

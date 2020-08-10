@@ -10,41 +10,65 @@ using Object = UnityEngine.Object;
 
 namespace DOTS.Serialization.ReferencedObjects
 {
-    public static class AssetDatabaseUtility
+    public static class EditorAssetDatabaseUtility
     {
+        public static void Add(List<Object> list, Object obj)
+        {
+            if(!list.Contains(obj))
+                list.Add(obj);
+        }
+        
         public static List<Object> GetEverything()
         {
             var list = new List<Object>();
+            // Add default material
+            Add(list, PrimitiveHelper.DefaultMaterial());
+            // Add all default meshes
             foreach (var builtinMesh in BuiltinMeshes())
             {
-                list.Add(builtinMesh);
+                Add(list, builtinMesh);
             }
-            
+            // get every asset that exists
             var allAssetPaths = AssetDatabase.GetAllAssetPaths();
             foreach (var path in allAssetPaths)
             {
-                var asset = AssetDatabase.LoadAssetAtPath<Object>(path);
-                var prefab = PrefabUtility.GetPrefabAssetType(asset);
+                // check if its a prefab
+                var assetObject = AssetDatabase.LoadAssetAtPath<Object>(path);
+                var assetType = PrefabUtility.GetPrefabAssetType(assetObject);
                 
-                // ReSharper disable once SwitchStatementMissingSomeEnumCasesNoDefault
-                switch (prefab)
+                // if its a prefab, get its meshes -todo recursive child search
+                switch (assetType)
                 {
                     case PrefabAssetType.Model:
                     {
-                        var tr = (GameObject) asset;
-                        var meshFilters = tr.GetComponentsInChildren<MeshFilter>();
-                        foreach (var meshFilter in meshFilters)
+                        var prefab = (GameObject)assetObject;
+                        
+                        // Add all meshes from skinnedmeshrenderers
+                        var skinnedRenderers = prefab.GetComponentsInChildren<SkinnedMeshRenderer>();
+                        foreach (var meshRenderer in skinnedRenderers)
                         {
-                            var mesh = meshFilter.sharedMesh;
-                            list.Add(mesh);
+                            Add(list, meshRenderer.sharedMaterial);
+                            Add(list, meshRenderer.sharedMesh);
                         }
+                        
+                        // Add all materials from meshrenderers
+                        var meshRenderers = prefab.GetComponentsInChildren<Renderer>();
+                        foreach (var meshRenderer in meshRenderers)
+                            Add(list, meshRenderer.sharedMaterial);
+                        
+                        // Add all meshes from meshfilters
+                        var meshFilters = prefab.GetComponentsInChildren<MeshFilter>();
+                        foreach (var meshFilter in meshFilters)
+                            Add(list, meshFilter.sharedMesh);
+                        
                         break;
                     }
                 }
                 
-                if (ShouldIgnore(asset.GetType()))
+                if (ShouldIgnore(assetObject.GetType()))
                     continue;
-                list.Add(asset);
+                
+                Add(list, assetObject);
             }
             
             return list;
@@ -66,7 +90,9 @@ namespace DOTS.Serialization.ReferencedObjects
             return assets;
         }
 
-
+        /// <summary>
+        /// Only add a few types for now, expand later
+        /// </summary>
         private static bool ShouldIgnore(Type t)
         {
             if (t == typeof(Mesh) ||
@@ -88,6 +114,7 @@ namespace DOTS.Serialization.ReferencedObjects
             {
                 list.Add(PrimitiveHelper.GetPrimitiveMesh(primitive));
             }
+            
             
             return list;
         }
