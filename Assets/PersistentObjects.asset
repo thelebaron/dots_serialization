@@ -13,14 +13,39 @@ MonoBehaviour:
   m_Name: PersistentObjects
   m_EditorClassIdentifier: 
   Target: {fileID: -67051877841403759, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
+  ReferencedUnityObjects: {fileID: 0}
   Assets:
+  - referencedObject: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    id: 500
+  - referencedObject: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+    id: 502
+  - referencedObject: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+    id: 498
   - referencedObject: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    id: 984
+    id: 496
+  - referencedObject: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+    id: 504
+  - referencedObject: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+    id: 506
+  - referencedObject: {fileID: 2100000, guid: 0431e26ecb17e9445bf6ac8b85812cee, type: 2}
+    id: 24198
+  - referencedObject: {fileID: 2783131832183395012, guid: 14077e64e9060534fa2478f390ed114b, type: 3}
+    id: 19578
+  - referencedObject: {fileID: 2100000, guid: f40229054a993f149aea8b2f9012f687, type: 2}
+    id: 24402
+  - referencedObject: {fileID: -7220654518481654627, guid: 65d05a765719d4550b0de4b6ad4ad81f, type: 3}
+    id: 19582
+  - referencedObject: {fileID: 7400000, guid: c91389c39d842cc4190ea8be0836798a, type: 2}
+    id: 25460
   - referencedObject: {fileID: 5003852644836739532, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
-    id: 38320
-  - referencedObject: {fileID: -3162770579398372593, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
-    id: 38332
-  - referencedObject: {fileID: -1294284738371021749, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
-    id: 38316
-  - referencedObject: {fileID: -67051877841403759, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
-    id: 38312
+    id: 19458
+  - referencedObject: {fileID: -280386823814665069, guid: e9cd56febd88f3545adca989a85f27d2, type: 3}
+    id: 19440
+  - referencedObject: {fileID: -2432090755550338912, guid: eaa6c47361520974cb9ad5cd3991f5ee, type: 3}
+    id: 25692
+  - referencedObject: {fileID: 3339987848490680739, guid: fbf5785e33f8f1a42ac1ff8318da7943, type: 3}
+    id: 25924
+  - referencedObject: {fileID: 2100000, guid: edb5bfe54738c4e58941b910ae835274, type: 2}
+    id: 26366
+  - referencedObject: {fileID: 2100000, guid: cf7483a4ff4f5734581bb43c14872db1, type: 2}
+    id: 19436

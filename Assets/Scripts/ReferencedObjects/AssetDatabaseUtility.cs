@@ -15,6 +15,11 @@ namespace DOTS.Serialization.ReferencedObjects
         public static List<Object> GetEverything()
         {
             var list = new List<Object>();
+            foreach (var builtinMesh in BuiltinMeshes())
+            {
+                list.Add(builtinMesh);
+            }
+            
             var allAssetPaths = AssetDatabase.GetAllAssetPaths();
             foreach (var path in allAssetPaths)
             {
@@ -74,5 +79,18 @@ namespace DOTS.Serialization.ReferencedObjects
 
             return true;
         }
+
+        private static List<Mesh> BuiltinMeshes()
+        {
+            var list = new List<Mesh>();
+            // Loop through all enum possibilities - https://stackoverflow.com/questions/972307/how-to-loop-through-all-enum-values-in-c
+            foreach (PrimitiveType primitive in Enum.GetValues(typeof(PrimitiveType)))
+            {
+                list.Add(PrimitiveHelper.GetPrimitiveMesh(primitive));
+            }
+            
+            return list;
+        }
+        
     }
 }

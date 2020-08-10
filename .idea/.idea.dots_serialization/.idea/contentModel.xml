@@ -36,6 +36,9 @@
           <e p="SerializeComponent.cs" t="Include" />
           <e p="TemporaryMenu.cs" t="Include" />
           <e p="TestObjectSerialization.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="PrimitiveHelper.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="dots_serialization.sln" t="IncludeFlat" />
