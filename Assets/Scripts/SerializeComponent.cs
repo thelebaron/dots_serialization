@@ -1,20 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
-using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml;
-using System.Xml.Serialization;
+using DOTS.Serialization;
+using ReferencedObjects;
+using Unity.Assertions;
 using Unity.Entities;
 using Unity.Entities.Serialization;
 using Unity.Physics.Systems;
-using Unity.Rendering;
 using Unity.Scenes;
-using UnityEditor;
 using UnityEngine;
-using Object = UnityEngine.Object;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 [Serializable]
 public struct MyData
@@ -81,11 +80,6 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
     }
 
 
-    private void Start()
-    {
-        
-    }
-
     private void Update()
     {
         HiddenGameObjects = new List<GameObject>();
@@ -104,15 +98,28 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         {
             em.CompleteAllJobs();
             TogglePhysicsSystemForSaving(false);
-            SaveData();
+            SaveData(out var objects);
             TogglePhysicsSystemForSaving(true);
+            
+            
+            NewAssetUtility.CreateJson(objects);
 
         }
 
         if (GUI.Button(new Rect(15, 100, 100, 35), "Load"))
         {
             em.CompleteAllJobs();
-            LoadData();
+            TogglePhysicsSystemForSaving(false);
+
+            var instance = NewAssetUtility.LoadJsonToUnity();
+            
+            StartCoroutine(Wait());
+            
+            LoadData(instance);
+            
+            TogglePhysicsSystemForSaving(true);
+            
+            //NewAssetUtility.LoadJsonToUnity();
         }
 
         if (GUI.Button(new Rect(15, 150, 100, 35), "Destroy All Entities"))
@@ -135,7 +142,12 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
     
     private void OnEnable()
     {
-        saveLocation = Application.dataPath + "\\" + "Saves"; 
+        saveLocation = Application.persistentDataPath + "\\" + "Saves";
+        
+        if (!Directory.Exists(saveLocation))
+            Directory.CreateDirectory(saveLocation);
+        
+        
         _FileName     = "SaveData.xml";
         _FileNameJSON = "SaveData.json";
         _FileNameYAML = "World.yaml";
@@ -144,7 +156,6 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             return;
         em = World.DefaultGameObjectInjectionWorld.EntityManager;
         
-        Save();
         saveOnStart = false;
     }
 
@@ -152,15 +163,24 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
     {
         if(!Application.isPlaying)
             return;
+        
         var x = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<BuildPhysicsWorld>();
         x.Enabled = enabled;
+        var y = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<StepPhysicsWorld>();
+        y.Enabled = enabled;
+        var z = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<ExportPhysicsWorld>();
+        z.Enabled = enabled;
     }
 
-    private void SaveData()
+    private void SaveData(out ReferencedUnityObjects objects)
     {
+        objects = null;
+        
         // DOTS Save world
-        if(World.All.Count<1) 
+        if (World.All.Count < 1)
+        {
             return;
+        }
         
         if (!Directory.Exists("Saves"))
             Directory.CreateDirectory("Saves");
@@ -170,6 +190,11 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
 #endif
         // Path for saving world
         var binaryWorldPath =  saveLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
+        
+        // Ensure not locked
+        if(FileHelper.IsFileLocked(new FileInfo(binaryWorldPath)))
+            return;
+        
         var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
         
         // Save whole world
@@ -180,34 +205,47 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         AssetDatabase.CreateAsset(referencedUnityObjects, unityobjectsAsset);
 #endif
         
+        objects = referencedUnityObjects;
         binaryWriter.Dispose();
     }
 
-    private void LoadData()
+    private void LoadData(ReferencedUnityObjects referencedUnityObjects)
     {
         if(World.All.Count<1) 
             return;
         
         // To generate the file we'll test against
         var binaryPath =  saveLocation + "\\" + "DefaultWorld.world";
-            
+        
+        // Ensure not locked
+        if(FileHelper.IsFileLocked(new FileInfo(binaryPath)))
+            return;
+        
         // need an empty world to do this
         var loadingWorld = new World("SavingWorld");
         var em           = loadingWorld.EntityManager;
         
         using (var reader = new StreamBinaryReader(binaryPath)) //GetFullPathByName(fileName))
         {
-            var objectRefAsset        = AssetDatabase.LoadAssetAtPath<ReferencedUnityObjects>(unityobjectsAsset);
+            //var referencedUnityObjects = AssetDatabase.LoadAssetAtPath<ReferencedUnityObjects>(unityobjectsAsset);
+            
             // Load objects as binary file
-            SerializeUtilityHybrid.Deserialize(em, reader, objectRefAsset);
+            SerializeUtilityHybrid.Deserialize(em, reader, referencedUnityObjects);
         }
         
         World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery);
         World.DefaultGameObjectInjectionWorld.EntityManager.MoveEntitiesFrom(em);
     }
-    private void Save()
+
+    IEnumerator Wait()
     {
-        
+ 
+//returning 0 will make it wait 1 frame
+        yield return 0;
+ 
+//code goes here
+ 
+ 
     }
 }
 

@@ -2,7 +2,7 @@
 
 namespace ReferencedObjects
 {
-    public class DummyJsonifiedData : MonoBehaviour
+    public class DebugJsonData : MonoBehaviour
     {
         public Object[] Array;
     }

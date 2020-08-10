@@ -28,7 +28,7 @@ public class PersistentObjects : ScriptableObject
     [MenuItem("SerializeNew/Create PersistentObjects")]
     public static void CreateAsset()
     {
-        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<PersistentObjects>(), "Assets/PersistentObjects.asset");
+        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<PersistentObjects>(), "Assets/Resources/PersistentObjects.asset");
     }
     
     /// <summary>
@@ -39,10 +39,11 @@ public class PersistentObjects : ScriptableObject
     {
         var entityObject = new EntityObject();
         
-        var id = Target.GetHashCode() + Target.GetInstanceID();
+        //var id = Target.GetHashCode() + Target.GetInstanceID();
         
         entityObject.referencedObject = Target;
-        entityObject.id = id;
+        entityObject.id = Guid.Parse(Target.name + Target.GetType()).ToString();
+        //entityObject.id = id;
         Assets.Add(entityObject);
     }
 
@@ -80,13 +81,16 @@ public class PersistentObjects : ScriptableObject
         foreach (var obj in assets)
         {
             var entityObject = new EntityObject();
-            var id = obj.GetHashCode();
         
             entityObject.referencedObject = obj;
-            entityObject.id               = id;
+            
+            entityObject.id = EditorAssetDatabaseUtility.GenerateHash(obj).ToString();
+            
             Assets.Add(entityObject);
         }
     }
+
+
 #endif
 }
 
@@ -94,6 +98,6 @@ public class PersistentObjects : ScriptableObject
 public class EntityObject
 {
     public Object referencedObject;
-    public int id;
+    public string id;
 }
 

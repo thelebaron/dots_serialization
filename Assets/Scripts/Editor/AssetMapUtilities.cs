@@ -83,10 +83,14 @@ namespace DOTS.Serialization
         [MenuItem("Serialize/CreateAssetMap")]
         public static void CreateJsonAssetMap()
         {
-            if (!Directory.Exists("Assets/Saves"))
-                Directory.CreateDirectory("Assets/Saves");
+            
+            var saveLocation = Application.persistentDataPath + "\\" + "Saves";
+        
+            if (!Directory.Exists(saveLocation))
+                Directory.CreateDirectory(saveLocation);
+
             // json make asset map json file
-            var path = "Assets" + "\\"+ "Saves"+ "\\" + "AssetMap.json";
+            var path = saveLocation + "\\" + "AssetMap.json";
             var jsondata = JsonUtility.ToJson(UpdateAssetMap(), true);
             File.WriteAllText(path, jsondata);
             
@@ -101,7 +105,7 @@ namespace DOTS.Serialization
         [MenuItem("Serialize/ParseAssetMap")]
         public static void ParseJsonAssetMap()
         {
-            var json = File.ReadAllText(Application.dataPath + "/Saves/AssetMap.json");
+            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
             AssetMap assetMap = JsonUtility.FromJson<AssetMap>(json);
             Debug.Log(assetMap);
             foreach (var pair in assetMap.AssetMapping)
@@ -127,7 +131,7 @@ namespace DOTS.Serialization
             // unsure but just recreates the assetmap just in case not up to date. perf might degrade as this gets bigger
             CreateJsonAssetMap();
             
-            var json = File.ReadAllText(Application.dataPath + "/Saves/AssetMap.json");
+            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
             AssetMap assetMap = JsonUtility.FromJson<AssetMap>(json);
             
             /*foreach (var assetkey in assetMap.AssetMapping)
@@ -143,6 +147,8 @@ namespace DOTS.Serialization
 
             return assetMap;
         }
+        
+        
 
     }
 }

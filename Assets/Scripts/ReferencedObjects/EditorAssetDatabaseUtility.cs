@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using Unity.Entities;
-using UnityEditor;
-using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Collider = Unity.Physics.Collider;
 using Object = UnityEngine.Object;
+using System.Security.Cryptography;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 namespace DOTS.Serialization.ReferencedObjects
 {
     public static class EditorAssetDatabaseUtility
     {
+        
+
+#if UNITY_EDITOR
         public static void Add(List<Object> list, Object obj)
         {
             if(!list.Contains(obj))
@@ -118,6 +123,20 @@ namespace DOTS.Serialization.ReferencedObjects
             
             return list;
         }
+#endif
         
+        public static Guid GenerateHash(Object obj)
+        {
+            Guid result;
+            
+            string input = obj.name + obj.GetType();
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] hash   = md5.ComputeHash(Encoding.Default.GetBytes(input));
+                result = new Guid(hash);
+            }
+
+            return result;
+        }
     }
 }

@@ -25,7 +25,7 @@ public class XMLEditor : Editor
     
     private void OnEnable()
     {
-        _FileLocation = Application.dataPath; 
+        _FileLocation = Application.persistentDataPath; 
         _FileName     = "SaveData.xml";
         _FileNameJSON = "SaveData.json";
         _FileNameYAML = "World.yaml";
@@ -284,7 +284,7 @@ public class XMLEditor : Editor
     void CreateXML() 
     { 
         // Where we want to save and load to and from 
-        _FileLocation = Application.dataPath; 
+        _FileLocation = Application.persistentDataPath; 
         _FileName     = "SaveData.xml";
         
         StreamWriter writer; 
