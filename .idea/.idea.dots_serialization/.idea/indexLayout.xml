@@ -13,7 +13,7 @@
       <Path>Library/PackageCache/com.unity.ide.rider@2.0.5</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0-preview</Path>
-      <Path>Library/PackageCache/com.unity.physics@0.3.2-preview</Path>
+      <Path>Library/PackageCache/com.unity.physics@0.4.0-preview.5</Path>
       <Path>Library/PackageCache/com.unity.platforms.desktop@0.7.0-preview.8</Path>
       <Path>Library/PackageCache/com.unity.platforms.windows@0.7.0-preview.8</Path>
       <Path>Library/PackageCache/com.unity.properties.ui@1.3.1-preview</Path>
@@ -21,7 +21,7 @@
       <Path>Library/PackageCache/com.unity.rendering.hybrid@0.7.0-preview.24</Path>
       <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.11.1</Path>
       <Path>Library/PackageCache/com.unity.serialization@1.3.1-preview</Path>
-      <Path>Library/PackageCache/com.unity.test-framework.performance@2.0.8-preview</Path>
+      <Path>Library/PackageCache/com.unity.test-framework.performance@2.2.0-preview</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.14</Path>
       <Path>Library/PackageCache/nuget.mono-cecil@0.1.5-preview</Path>
       <Path>ProjectSettings</Path>
@@ -33,10 +33,8 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Release</Path>
-      <Path>Saves</Path>
       <Path>Temp</Path>
       <Path>UserSettings</Path>
-      <Path>obj</Path>
     </explicitExcludes>
   </component>
 </project>
