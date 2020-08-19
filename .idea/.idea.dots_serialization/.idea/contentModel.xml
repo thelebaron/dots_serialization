@@ -34,8 +34,8 @@
           <e p="ReferencedObjects" t="Include">
             <e p="DebugJsonData.cs" t="Include" />
             <e p="EditorAssetDatabaseUtility.cs" t="Include" />
+            <e p="NewAssetUtility.cs" t="Include" />
             <e p="PersistentObjects.cs" t="Include" />
-            <e p="SerializedReferences.cs" t="Include" />
           </e>
           <e p="SerializeComponent.cs" t="Include" />
           <e p="TemporaryMenu.cs" t="Include" />
@@ -48,8 +48,23 @@
       </e>
       <e p="dots_serialization.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
-      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive">
+        <e p="com.thelebaron.buildtools" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Git.cs" t="Include" />
+              <e p="GitCommands.cs" t="Include" />
+              <e p="ProcessExtensions.cs" t="Include" />
+              <e p="ProjectBuilder.cs" t="Include" />
+              <e p="SemVer.cs" t="Include" />
+              <e p="TextureProcessor.cs" t="Include" />
+              <e p="thelebaron.buildversion.asmdef" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="thelebaron.buildtools.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

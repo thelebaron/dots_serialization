@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using UnityEngine;
 
 namespace DOTS.Serialization
 {
@@ -9,6 +10,8 @@ namespace DOTS.Serialization
     {
         public static bool IsFileLocked(FileInfo file)
         {
+
+            
             try
             {
                 using(FileStream stream = file.Open(FileMode.Open, FileAccess.Read, FileShare.None))
@@ -22,6 +25,7 @@ namespace DOTS.Serialization
                 //still being written to
                 //or being processed by another thread
                 //or does not exist (has already been processed)
+                
                 return true;
             }
 

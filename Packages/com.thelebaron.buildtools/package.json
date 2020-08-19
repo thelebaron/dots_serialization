@@ -1,0 +1,12 @@
+{
+  "name": "com.thelebaron.buildtools",
+  "description": "build tools & git versioning scripts",
+  "version": "0.0.1",
+  "displayName": "build tools",
+  "type": "tool",
+  "unity": "2020.1",
+  "author": {
+  "name": "thelebaron",
+  "url": "https://www.twitter.com/chrislebaron"
+}
+}

@@ -97,9 +97,9 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         if (GUI.Button(new Rect(15, 50, 100, 35), "Save"))
         {
             em.CompleteAllJobs();
-            TogglePhysicsSystemForSaving(false);
+            ToggleSystems(false);
             SaveData(out var objects);
-            TogglePhysicsSystemForSaving(true);
+            ToggleSystems(true);
             
             
             NewAssetUtility.CreateJson(objects);
@@ -109,7 +109,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         if (GUI.Button(new Rect(15, 100, 100, 35), "Load"))
         {
             em.CompleteAllJobs();
-            TogglePhysicsSystemForSaving(false);
+            ToggleSystems(false);
 
             var instance = NewAssetUtility.LoadJsonToUnity();
             
@@ -117,7 +117,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             
             LoadData(instance);
             
-            TogglePhysicsSystemForSaving(true);
+            ToggleSystems(true);
             
             //NewAssetUtility.LoadJsonToUnity();
         }
@@ -159,54 +159,88 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         saveOnStart = false;
     }
 
-    private static void TogglePhysicsSystemForSaving(bool enabled)
+    private static void ToggleSystems(bool enabled)
     {
         if(!Application.isPlaying)
             return;
+
+        var world = World.DefaultGameObjectInjectionWorld;
+        var systems = world.Systems;
+
+        //Debug.Log(systems.Count);
+        foreach (var system in systems)
+        {
+            system.Enabled = enabled;
+        }
         
-        var x = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<BuildPhysicsWorld>();
-        x.Enabled = enabled;
-        var y = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<StepPhysicsWorld>();
-        y.Enabled = enabled;
-        var z = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<ExportPhysicsWorld>();
-        z.Enabled = enabled;
     }
 
     private void SaveData(out ReferencedUnityObjects objects)
     {
-        objects = null;
+        ReferencedUnityObjects unityObjects;
+        Debug.Log("SaveData");
         
         // DOTS Save world
         if (World.All.Count < 1)
         {
+            objects = null;
+            Debug.Log("Count < 1");
             return;
         }
-        
+
         if (!Directory.Exists("Saves"))
+        {
+            Debug.Log("CreateDirectory");
             Directory.CreateDirectory("Saves");
+        }
         
 #if UNITY_EDITOR
         AssetDatabase.Refresh();
 #endif
         // Path for saving world
         var binaryWorldPath =  saveLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
+        /*var file = new FileInfo(binaryWorldPath);
+        if (File.Exists(file.Name))
+        {
+            Debug.Log(file.Directory + "\\" + file.Name);
+            // Ensure not locked
+            if (FileHelper.IsFileLocked(file))
+            {
+                Debug.Log("file locked @ " + binaryWorldPath);
+                objects = null;
+                return;
+            }
+        }*/
         
-        // Ensure not locked
-        if(FileHelper.IsFileLocked(new FileInfo(binaryWorldPath)))
-            return;
+        using (var binaryWriter = new StreamBinaryWriter(binaryWorldPath))
+        {
+            // Save whole world
+            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
+            unityObjects = referencedUnityObjects;
+        } // file is automatically closed after reaching the end of the using block
         
-        var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
+        /*using (var savefile = File.Open(binaryWorldPath, FileMode.OpenOrCreate))
+        {
+            //bf.Serialize(savefile, myObject);
+            var binaryWriter = new StreamBinaryWriter(binaryWorldPath);
         
-        // Save whole world
-        SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
+            // Save whole world
+            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
+            unityObjects = referencedUnityObjects;
+            binaryWriter.Dispose();
+        }*/
         
+        //Debug.Log("Serialize");
 #if UNITY_EDITOR
         // Create an asset from the output. This doesnt work during runtime.
-        AssetDatabase.CreateAsset(referencedUnityObjects, unityobjectsAsset);
+        AssetDatabase.CreateAsset(unityObjects, unityobjectsAsset);
 #endif
         
-        objects = referencedUnityObjects;
-        binaryWriter.Dispose();
+        objects = unityObjects;
+
+        Assert.IsNotNull(unityObjects);
+        //Debug.Log("assertion");
+        //binaryWriter.Dispose();
     }
 
     private void LoadData(ReferencedUnityObjects referencedUnityObjects)
@@ -214,12 +248,14 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         if(World.All.Count<1) 
             return;
         
+        Debug.Log("LoadData");
+        
         // To generate the file we'll test against
         var binaryPath =  saveLocation + "\\" + "DefaultWorld.world";
         
         // Ensure not locked
-        if(FileHelper.IsFileLocked(new FileInfo(binaryPath)))
-            return;
+        //if(FileHelper.IsFileLocked(new FileInfo(binaryPath)))
+            //return;
         
         // need an empty world to do this
         var loadingWorld = new World("SavingWorld");

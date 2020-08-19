@@ -18,7 +18,7 @@ public class DummyMoveSystem : SystemBase
     protected override void OnUpdate()
     {
         // add random component
-        if (query.CalculateEntityCount() != 0)
+        /*if (query.CalculateEntityCount() != 0)
         {
             var native = query.ToEntityArray(Allocator.Temp);
             for (int i = 0; i < native.Length; i++)
@@ -29,11 +29,11 @@ public class DummyMoveSystem : SystemBase
             }
 
             native.Dispose();
-        }
+        }*/
         float time = Time.DeltaTime;
         Entities.ForEach((Entity entity, ref Translation translation, in RandomDirection randomDirection) =>
         {
-            //translation.Value += time * randomDirection.Direction * 2;
+            translation.Value += time * randomDirection.Direction * 2;
             
         }).Schedule();
         

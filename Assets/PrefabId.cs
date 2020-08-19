@@ -20,7 +20,6 @@ public class PrefabId : MonoBehaviour
     
     private void Awake()
     {
-        Assert.IsNotNull(PersistentObjects);
         instance = this;
 
         Assets = PersistentObjects.Assets;

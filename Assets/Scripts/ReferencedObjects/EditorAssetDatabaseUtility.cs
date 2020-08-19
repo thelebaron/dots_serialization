@@ -6,7 +6,8 @@ using UnityEngine;
 using Collider = Unity.Physics.Collider;
 using Object = UnityEngine.Object;
 using System.Security.Cryptography;
-
+using Hash128 = Unity.Entities.Hash128;
+using UnityObject = UnityEngine.Object;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -125,7 +126,7 @@ namespace DOTS.Serialization.ReferencedObjects
         }
 #endif
         
-        public static Guid GenerateHash(Object obj)
+        /*public static Guid GenerateHash(Object obj)
         {
             Guid result;
             
@@ -137,6 +138,21 @@ namespace DOTS.Serialization.ReferencedObjects
             }
 
             return result;
+        }*/
+        
+        public static unsafe Hash128 GenerateHash(UnityObject obj)
+        {
+            Guid guid;
+            var  input = obj.name + obj.GetType();
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] bytehash = md5.ComputeHash(Encoding.Default.GetBytes(input));
+                guid = new Guid(bytehash);
+            }
+        
+            var hash = new Unity.Entities.Hash128();
+            hash = *(Unity.Entities.Hash128*)&guid;
+            return hash;
         }
     }
 }
