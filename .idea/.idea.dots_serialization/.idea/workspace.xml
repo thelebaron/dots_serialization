@@ -45,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.14/UnityEditor.TestRunner/GUI/IAssetsDatabaseHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Serialization/BinarySerialization.cs" root0="SKIP_HIGHLIGHTING" />
@@ -171,7 +172,7 @@
       <workItem from="1593453348003" duration="518000" />
       <workItem from="1596929893727" duration="39102000" />
       <workItem from="1597085740705" duration="2868000" />
-      <workItem from="1597791617909" duration="9617000" />
+      <workItem from="1597791617909" duration="9872000" />
     </task>
     <servers />
   </component>
