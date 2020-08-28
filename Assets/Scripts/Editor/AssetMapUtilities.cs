@@ -87,7 +87,7 @@ namespace DOTS.Serialization
                 Directory.CreateDirectory(saveLocation);
 
             // json make asset map json file
-            var path = saveLocation + "\\" + "AssetMap.json";
+            var path = saveLocation + "\\" + "SerializedAssetMap.json";
             var jsondata = JsonUtility.ToJson(UpdateAssetMap(), true);
             File.WriteAllText(path, jsondata);
             
@@ -102,7 +102,7 @@ namespace DOTS.Serialization
         [MenuItem("Serialize/ParseAssetMap")]
         public static void ParseJsonAssetMap()
         {
-            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
+            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/SerializedAssetMap.json");
             DiskAssetMap diskAssetMap = JsonUtility.FromJson<DiskAssetMap>(json);
             Debug.Log(diskAssetMap);
             foreach (var pair in diskAssetMap.AssetMapping)
@@ -128,19 +128,9 @@ namespace DOTS.Serialization
             // unsure but just recreates the assetmap just in case not up to date. perf might degrade as this gets bigger
             CreateJsonAssetMap();
             
-            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
+            var json = File.ReadAllText(Application.persistentDataPath + "/Saves/SerializedAssetMap.json");
             DiskAssetMap diskAssetMap = JsonUtility.FromJson<DiskAssetMap>(json);
             
-            /*foreach (var assetkey in assetMap.AssetMapping)
-            {
-                Debug.Log(assetkey.Key + " <key - address> " + assetkey.Address);
-                
-                var load = Addressables.LoadAssetAsync<Object>(assetkey.Address);
-                //yield return load; // i think this is necessary
-                var result = load.Result;
-                if(result!=null)
-                    Debug.Log(result);
-            }*/
 
             return diskAssetMap;
         }

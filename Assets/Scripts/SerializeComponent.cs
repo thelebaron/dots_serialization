@@ -102,7 +102,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             ToggleSystems(true);
             
             
-            NewAssetUtility.CreateJson(objects);
+            AssetUtility.CreateJson(objects);
 
         }
 
@@ -111,9 +111,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             em.CompleteAllJobs();
             ToggleSystems(false);
 
-            var instance = NewAssetUtility.LoadJsonToUnity();
-            
-            StartCoroutine(Wait());
+            var instance = AssetUtility.LoadJsonToUnity();
             
             LoadData(instance);
             
@@ -135,7 +133,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
     }
     
     const string unityobjectsAsset = "Assets/UnityObjects.asset";
-    string saveLocation, _FileName, _FileNameJSON, _FileNameYAML;
+    string saveLocation;//, _FileName, _FileNameJSON;//, _FileNameYAML;
     private EntityManager em;
     
     // old
@@ -148,9 +146,9 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             Directory.CreateDirectory(saveLocation);
         
         
-        _FileName     = "SaveData.xml";
-        _FileNameJSON = "SaveData.json";
-        _FileNameYAML = "World.yaml";
+        //_FileName     = "SaveData.xml";
+        //_FileNameJSON = "SaveData.json";
+        //_FileNameYAML = "World.yaml";
         
         if (World.All.Count == 0)
             return;
@@ -199,18 +197,6 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
 #endif
         // Path for saving world
         var binaryWorldPath =  saveLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
-        /*var file = new FileInfo(binaryWorldPath);
-        if (File.Exists(file.Name))
-        {
-            Debug.Log(file.Directory + "\\" + file.Name);
-            // Ensure not locked
-            if (FileHelper.IsFileLocked(file))
-            {
-                Debug.Log("file locked @ " + binaryWorldPath);
-                objects = null;
-                return;
-            }
-        }*/
         
         using (var binaryWriter = new StreamBinaryWriter(binaryWorldPath))
         {
@@ -218,17 +204,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
             unityObjects = referencedUnityObjects;
         } // file is automatically closed after reaching the end of the using block
-        
-        /*using (var savefile = File.Open(binaryWorldPath, FileMode.OpenOrCreate))
-        {
-            //bf.Serialize(savefile, myObject);
-            var binaryWriter = new StreamBinaryWriter(binaryWorldPath);
-        
-            // Save whole world
-            SerializeUtilityHybrid.Serialize(em, binaryWriter, out ReferencedUnityObjects referencedUnityObjects);
-            unityObjects = referencedUnityObjects;
-            binaryWriter.Dispose();
-        }*/
+
         
         //Debug.Log("Serialize");
 #if UNITY_EDITOR
@@ -239,8 +215,6 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         objects = unityObjects;
 
         Assert.IsNotNull(unityObjects);
-        //Debug.Log("assertion");
-        //binaryWriter.Dispose();
     }
 
     private void LoadData(ReferencedUnityObjects referencedUnityObjects)
@@ -253,18 +227,12 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         // To generate the file we'll test against
         var binaryPath =  saveLocation + "\\" + "DefaultWorld.world";
         
-        // Ensure not locked
-        //if(FileHelper.IsFileLocked(new FileInfo(binaryPath)))
-            //return;
-        
         // need an empty world to do this
         var loadingWorld = new World("SavingWorld");
         var em           = loadingWorld.EntityManager;
         
         using (var reader = new StreamBinaryReader(binaryPath)) //GetFullPathByName(fileName))
         {
-            //var referencedUnityObjects = AssetDatabase.LoadAssetAtPath<ReferencedUnityObjects>(unityobjectsAsset);
-            
             // Load objects as binary file
             SerializeUtilityHybrid.Deserialize(em, reader, referencedUnityObjects);
         }
@@ -273,16 +241,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         World.DefaultGameObjectInjectionWorld.EntityManager.MoveEntitiesFrom(em);
     }
 
-    IEnumerator Wait()
-    {
- 
-//returning 0 will make it wait 1 frame
-        yield return 0;
- 
-//code goes here
- 
- 
-    }
+
 }
 
 

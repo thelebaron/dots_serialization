@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;
 #if UNITY_EDITOR
+using System.Collections;
 using UnityEditor;
 using DOTS.Serialization.ReferencedObjects;
 #endif
@@ -21,12 +22,16 @@ public class AssetMap : ScriptableObject
     [MenuItem("SerializeNew/Create or Refresh AssetMap")]
     public static void CreateAsset()
     {
-        AssetDatabase.CreateAsset(CreateInstance<AssetMap>(), "Assets/Resources/AssetMap.asset");
-        var asset = AssetDatabase.LoadAssetAtPath<AssetMap>("Assets/Resources/AssetMap.asset");
-        asset.Refresh();
+        var assetMap = AssetDatabase.LoadAssetAtPath<AssetMap>("Assets/Resources/AssetMap.asset");
+        if(assetMap == null)
+            AssetDatabase.CreateAsset(CreateInstance<AssetMap>(), "Assets/Resources/AssetMap.asset");
+
+        AssetDatabase.Refresh();
+        
+        assetMap.Refresh();
     }
     
-    [ContextMenu("GetEveryAsset")]
+    [ContextMenu("Refresh all assets")]
     public void Refresh()
     {
         this.assets ??= new List<EntityObject>();
@@ -40,10 +45,20 @@ public class AssetMap : ScriptableObject
             this.assets.Add(entityObject);
         }
 
+        AssetDatabase.Refresh();
         Debug.Log("Refreshed Assetmap with " + assets.Count  + " assets.");
     }
 
-
+    IEnumerator Wait()
+    {
+ 
+//returning 0 will make it wait 1 frame
+        yield return 0;
+ 
+//code goes here
+ 
+ 
+    }
 
 #endif
 }

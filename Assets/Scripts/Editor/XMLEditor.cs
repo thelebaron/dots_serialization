@@ -154,7 +154,7 @@ public class XMLEditor : Editor
             /*
             {
                 // json make asset map json file
-                var path = _FileLocation + "\\" + "assetmap.json";;
+                var path = _FileLocation + "\\" + "SerializedAssetMap.json";;
                 var jsondata = JsonUtility.ToJson(AssetMapUtilities.UpdateAddressables(), true);
                 File.WriteAllText(path, jsondata);
             }*/

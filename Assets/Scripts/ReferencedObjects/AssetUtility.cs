@@ -14,7 +14,7 @@ using Object = UnityEngine.Object;
 
 namespace ReferencedObjects
 {
-    public static class NewAssetUtility
+    public static class AssetUtility
     {
         /// <summary>
         /// Saves out 
@@ -25,7 +25,7 @@ namespace ReferencedObjects
 #endif
         public static void CreateJson(ReferencedUnityObjects objects)
         {
-            var map = new AssetMap();
+            var map = new DiskAssetMap();
             map.Create(objects);
             //Debug.Log(objects);
             
@@ -37,7 +37,7 @@ namespace ReferencedObjects
             }
             
             // json make asset map json file
-            var path     = saveLocation + "\\" + "AssetMap.json";
+            var path     = saveLocation + "\\" + "SerializedAssetMap.json";
             var jsondata = JsonUtility.ToJson(map, true);
             File.WriteAllText(path, jsondata);
             
@@ -56,9 +56,8 @@ namespace ReferencedObjects
         public static ReferencedUnityObjects LoadJsonToUnity()
         {
             // Load the json file
-            //Debug.Log("try path = " + Application.persistentDataPath + "/Saves/AssetMap.json" );
-            var json     = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
-            var assetMap = JsonUtility.FromJson<AssetMap>(json);
+            var json     = File.ReadAllText(Application.persistentDataPath + "/Saves/SerializedAssetMap.json");
+            var assetMap = JsonUtility.FromJson<DiskAssetMap>(json);
             
             // Make a dummy file to test in editor
             var dummyGameObject = new GameObject();
@@ -74,12 +73,9 @@ namespace ReferencedObjects
             debugJsonData.Array = new Object[assetMap.Array.Length];
             
             // Next get the actual object references and their ids from the persistent objects asset(note this asset should be created in editor or during a build).
-            /*#if UNITY_EDITOR
-            var persistentObjects = AssetDatabase.LoadAssetAtPath<PersistentObjects>("Assets/Resources/PersistentObjects.asset");
-            #endif*/
-            var persistentObjects = PrefabId.Instance().assetMap;
+            //var map = PrefabId.Instance().assetMap;
             //Assert.IsNotNull(persistentObjects);
-            var assetArray = persistentObjects.assets;// PrefabId.Instance().Assets;
+            var assetArray = Resources.Load<AssetMap>("AssetMap").assets;// PrefabId.Instance().Assets;
             
             // Iterate every object in jsonified data 
             for (var i = 0; i < assetMap.Array.Length; i++)
@@ -113,7 +109,7 @@ namespace ReferencedObjects
     /// The json class to save
     /// </summary>
     [Serializable]
-    public class AssetMap
+    public class DiskAssetMap
     {
         public SerializedObjectHash[] Array;
 

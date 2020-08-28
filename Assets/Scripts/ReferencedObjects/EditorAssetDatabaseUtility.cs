@@ -16,7 +16,6 @@ namespace DOTS.Serialization.ReferencedObjects
     public static class EditorAssetDatabaseUtility
     {
         
-
 #if UNITY_EDITOR
         public static void Add(List<Object> list, Object obj)
         {
