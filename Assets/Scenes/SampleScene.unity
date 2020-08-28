@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e01a72262a692419c9fa29f2e9543d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PersistentObjects: {fileID: 11400000, guid: c0fb2a3a8a6388d47a54860c9ebe5c3f, type: 2}
+  assetMap: {fileID: 11400000, guid: da587cacae888e04f998ccdbb76d1eeb, type: 2}
   Assets: []
 --- !u!4 &1642489121
 Transform:

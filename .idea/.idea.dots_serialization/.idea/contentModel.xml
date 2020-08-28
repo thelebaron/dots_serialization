@@ -12,11 +12,6 @@
         <e p="Scripts" t="Include">
           <e p="AssetMap.cs" t="Include" />
           <e p="BinarySerialization.cs" t="Include" />
-          <e p="Discord" t="Include">
-            <e p="AssetMap.cs" t="Include" />
-            <e p="AssetMapSubAssetsRule.cs" t="Include" />
-            <e p="WorldReferenceObjects.cs" t="Include" />
-          </e>
           <e p="DummyScripts" t="Include">
             <e p="CameraAuthoring.cs" t="Include" />
             <e p="DogAuthoring.cs" t="Include" />
@@ -32,10 +27,10 @@
           <e p="EntityAsset.cs" t="Include" />
           <e p="QueryReferences.cs" t="Include" />
           <e p="ReferencedObjects" t="Include">
+            <e p="AssetMap.cs" t="Include" />
             <e p="DebugJsonData.cs" t="Include" />
             <e p="EditorAssetDatabaseUtility.cs" t="Include" />
             <e p="NewAssetUtility.cs" t="Include" />
-            <e p="PersistentObjects.cs" t="Include" />
           </e>
           <e p="SerializeComponent.cs" t="Include" />
           <e p="TemporaryMenu.cs" t="Include" />

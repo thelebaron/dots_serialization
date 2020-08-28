@@ -31,9 +31,6 @@ namespace DOTS.Serialization
         [MenuItem("Serialize/UpdateAssetMap")]
         public static AssetMap UpdateAssetMap()
         {
-            //use default group for now
-            //Debug.Log(UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings.groups[1].entries.Count);
-            
             var map = new AssetMap();
 
             var addressableAssetEntries = UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings

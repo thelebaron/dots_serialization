@@ -1,11 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
-using Unity.Scenes;
 using UnityEngine.Serialization;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;
@@ -29,10 +26,12 @@ public class AssetMap : ScriptableObject
     
 #if UNITY_EDITOR
     
-    [MenuItem("SerializeNew/Create PersistentObjects")]
+    [MenuItem("SerializeNew/Create or Refresh AssetMap")]
     public static void CreateAsset()
     {
-        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<AssetMap>(), "Assets/Resources/PersistentObjects.asset");
+        AssetDatabase.CreateAsset(CreateInstance<AssetMap>(), "Assets/Resources/AssetMap.asset");
+        var asset = AssetDatabase.LoadAssetAtPath<AssetMap>("Assets/Resources/AssetMap.asset");
+        asset.Refresh();
     }
     
     /*/// <summary>
@@ -78,7 +77,7 @@ public class AssetMap : ScriptableObject
     }
     */
     [ContextMenu("GetEveryAsset")]
-    public void GetEveryAsset()
+    public void Refresh()
     {
         this.assets ??= new List<EntityObject>();
         this.assets?.Clear();
