@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 
 public class PrefabId : MonoBehaviour
 {
-    [FormerlySerializedAs("PersistentObjects")] public AssetMap assetMap;
+    public AssetMap assetMap;
     
     public List<EntityObject> Assets;
 
