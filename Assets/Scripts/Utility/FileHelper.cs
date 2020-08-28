@@ -1,7 +1,6 @@
 ﻿using System.IO;
-using UnityEngine;
 
-namespace DOTS.Serialization
+namespace Utility
 {
     /// <summary>
     /// https://stackoverflow.com/questions/876473/is-there-a-way-to-check-if-a-file-is-in-use

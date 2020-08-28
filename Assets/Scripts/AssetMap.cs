@@ -4,14 +4,21 @@ using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Utility;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;
 #if UNITY_EDITOR
 using System.Collections;
 using UnityEditor;
-using DOTS.Serialization.ReferencedObjects;
+
 #endif
 
+/// <summary>
+/// An object holder of unity reference objects and their respective hashes.
+/// This object is used as a reference when creating a json assetmap to store their hashes and names, and then remapped on deserializing
+/// to match hash to actual unity object. This must be created in the editor and updated manually as a project grows.
+/// should add methods to auto update on either editor start/shutdown or project building
+/// </summary>
 public class AssetMap : ScriptableObject
 {
     public List<EntityObject> assets;
@@ -36,7 +43,7 @@ public class AssetMap : ScriptableObject
     {
         this.assets ??= new List<EntityObject>();
         this.assets?.Clear();
-        var assets = EditorAssetDatabaseUtility.GetEverything();
+        var assets = EditorMap.GetEverything();
 
         foreach (var obj in assets)
         {

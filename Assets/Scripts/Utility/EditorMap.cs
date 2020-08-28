@@ -1,19 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 using Unity.Entities;
+using UnityEditor;
 using UnityEngine;
 using Collider = Unity.Physics.Collider;
 using Object = UnityEngine.Object;
-using System.Security.Cryptography;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;
 #if UNITY_EDITOR
-using UnityEditor;
+
 #endif
-namespace DOTS.Serialization.ReferencedObjects
+namespace Utility
 {
-    public static class AssetMapUtility
+    /// <summary>
+    /// Provides utility methods to create an asset map in the editor.
+    /// This is the only way an assetmap may be made.
+    /// </summary>
+    public static class EditorMap
     {
         
 #if UNITY_EDITOR

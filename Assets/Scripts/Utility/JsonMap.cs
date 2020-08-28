@@ -1,20 +1,21 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using DOTS.Serialization.ReferencedObjects;
-using Unity.Assertions;
+using ReferencedObjects;
 using Unity.Scenes;
-using Hash128 = Unity.Entities.Hash128;
-using UnityObject = UnityEngine.Object;
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
 using UnityEngine;
+using Hash128 = Unity.Entities.Hash128;
+#if UNITY_EDITOR
+#endif
 using Object = UnityEngine.Object;
 
-namespace ReferencedObjects
+namespace Utility
 {
-    public static class AssetUtility
+    /// <summary>
+    /// Utility class to create a disk based asset map in runtime and editor mode.
+    /// </summary>
+    public static class JsonMap
     {
         /// <summary>
         /// Saves out 
@@ -118,7 +119,7 @@ namespace ReferencedObjects
             // Loop through and find the matching object for each entry in the incoming referenced objects
             for (int i = 0; i < referencedUnityObjects.Array.Length; i++)
             {
-                Array[i].hash = AssetMapUtility.GenerateHash(referencedUnityObjects.Array[i]);
+                Array[i].hash = EditorMap.GenerateHash(referencedUnityObjects.Array[i]);
                 Array[i].name = referencedUnityObjects.Array[i].name;
             }
         }

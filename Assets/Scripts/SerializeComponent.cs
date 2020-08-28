@@ -11,6 +11,7 @@ using Unity.Entities.Serialization;
 using Unity.Physics.Systems;
 using Unity.Scenes;
 using UnityEngine;
+using Utility;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -102,7 +103,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             ToggleSystems(true);
             
             
-            AssetUtility.CreateJson(objects);
+            JsonMap.CreateJson(objects);
 
         }
 
@@ -111,7 +112,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             em.CompleteAllJobs();
             ToggleSystems(false);
 
-            var instance = AssetUtility.LoadJsonToUnity();
+            var instance = JsonMap.LoadJsonToUnity();
             
             LoadData(instance);
             
