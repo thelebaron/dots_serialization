@@ -58,23 +58,19 @@ namespace ReferencedObjects
             // Load the json file
             var json     = File.ReadAllText(Application.persistentDataPath + "/Saves/SerializedAssetMap.json");
             var assetMap = JsonUtility.FromJson<DiskAssetMap>(json);
-            
-            // Make a dummy file to test in editor
-            var dummyGameObject = new GameObject();
-            dummyGameObject.name = "Dummy";
-            
             // Create instance of Entities ReferencedUnityObjects
             var instance = UnityEngine.ScriptableObject.CreateInstance<ReferencedUnityObjects>();
             instance.Array = new Object[assetMap.Array.Length];
             var array = new Object[assetMap.Array.Length];
             
-            // DEBUGGING: Create dummy monobehaviour
-            var debugJsonData = dummyGameObject.AddComponent<DebugJsonData>();
-            debugJsonData.Array = new Object[assetMap.Array.Length];
+                // Make a dummy file to test in editor
+                var dummyGameObject = new GameObject();
+                dummyGameObject.name = "Dummy";
+                // DEBUGGING: Create dummy monobehaviour
+                var debugJsonData = dummyGameObject.AddComponent<DebugJsonData>();
+                debugJsonData.Array = new Object[assetMap.Array.Length];
             
             // Next get the actual object references and their ids from the persistent objects asset(note this asset should be created in editor or during a build).
-            //var map = PrefabId.Instance().assetMap;
-            //Assert.IsNotNull(persistentObjects);
             var assetArray = Resources.Load<AssetMap>("AssetMap").assets;// PrefabId.Instance().Assets;
             
             // Iterate every object in jsonified data 
@@ -87,19 +83,11 @@ namespace ReferencedObjects
                     var unityObject = actualObject.referencedObject;
                     // Match array index to object
                     array[i] = unityObject;
-                    debugJsonData.Array[i] = unityObject;
+                        debugJsonData.Array[i] = unityObject;
                     instance.Array[i]      = unityObject;
                     
                 }
             }
-
-            foreach (var VARIABLE in debugJsonData.Array)
-            {
-                //Assert.IsNotNull(VARIABLE);
-            }
-
-            //debugJsonData.Array = array;
-            //instance.Array = array;
             
             return instance;
         }
@@ -130,7 +118,7 @@ namespace ReferencedObjects
             // Loop through and find the matching object for each entry in the incoming referenced objects
             for (int i = 0; i < referencedUnityObjects.Array.Length; i++)
             {
-                Array[i].hash = EditorAssetDatabaseUtility.GenerateHash(referencedUnityObjects.Array[i]);
+                Array[i].hash = AssetMapUtility.GenerateHash(referencedUnityObjects.Array[i]);
                 Array[i].name = referencedUnityObjects.Array[i].name;
             }
         }

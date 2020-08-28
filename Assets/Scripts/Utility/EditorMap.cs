@@ -13,7 +13,7 @@ using UnityEditor;
 #endif
 namespace DOTS.Serialization.ReferencedObjects
 {
-    public static class EditorAssetDatabaseUtility
+    public static class AssetMapUtility
     {
         
 #if UNITY_EDITOR
