@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Assertions;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class PrefabId : MonoBehaviour
 {
-    public PersistentObjects PersistentObjects;
+    [FormerlySerializedAs("PersistentObjects")] public AssetMap assetMap;
     
     public List<EntityObject> Assets;
 
@@ -22,6 +23,6 @@ public class PrefabId : MonoBehaviour
     {
         instance = this;
 
-        Assets = PersistentObjects.Assets;
+        Assets = assetMap.assets;
     }
 }

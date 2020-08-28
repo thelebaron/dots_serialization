@@ -77,9 +77,9 @@ namespace ReferencedObjects
             /*#if UNITY_EDITOR
             var persistentObjects = AssetDatabase.LoadAssetAtPath<PersistentObjects>("Assets/Resources/PersistentObjects.asset");
             #endif*/
-            var persistentObjects = PrefabId.Instance().PersistentObjects;
+            var persistentObjects = PrefabId.Instance().assetMap;
             //Assert.IsNotNull(persistentObjects);
-            var assetArray = persistentObjects.Assets;// PrefabId.Instance().Assets;
+            var assetArray = persistentObjects.assets;// PrefabId.Instance().Assets;
             
             // Iterate every object in jsonified data 
             for (var i = 0; i < assetMap.Array.Length; i++)

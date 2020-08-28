@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using Unity.Scenes;
+using UnityEngine.Serialization;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;
 #if UNITY_EDITOR
@@ -13,25 +14,25 @@ using UnityEditor;
 using DOTS.Serialization.ReferencedObjects;
 #endif
 
-public class PersistentObjects : ScriptableObject
+public class AssetMap : ScriptableObject
 {
-    public UnityObject Target;
-    public ReferencedUnityObjects ReferencedUnityObjects;
-    public List<EntityObject> Assets;
+    //public UnityObject Target;
+    //public ReferencedUnityObjects ReferencedUnityObjects;
+    [FormerlySerializedAs("Assets")] public List<EntityObject> assets;
 
-    public static ReferencedUnityObjects RemappedObjects()
+   /* public static ReferencedUnityObjects RemappedObjects()
     {
         var objRefs = UnityEngine. ScriptableObject. CreateInstance<ReferencedUnityObjects>();
         // find and compare with json
         return null;
-    }
+    }*/
     
 #if UNITY_EDITOR
     
     [MenuItem("SerializeNew/Create PersistentObjects")]
     public static void CreateAsset()
     {
-        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<PersistentObjects>(), "Assets/Resources/PersistentObjects.asset");
+        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<AssetMap>(), "Assets/Resources/PersistentObjects.asset");
     }
     
     /*/// <summary>
@@ -52,7 +53,7 @@ public class PersistentObjects : ScriptableObject
         Assets.Add(entityObject);
     }*/
 
-    /// <summary>
+    /*/// <summary>
     /// just log basic info about all items in the list
     /// </summary>
     [ContextMenu("Log")]
@@ -75,12 +76,12 @@ public class PersistentObjects : ScriptableObject
             
         }
     }
-    
+    */
     [ContextMenu("GetEveryAsset")]
     public void GetEveryAsset()
     {
-        Assets ??= new List<EntityObject>();
-        Assets?.Clear();
+        this.assets ??= new List<EntityObject>();
+        this.assets?.Clear();
         var assets = EditorAssetDatabaseUtility.GetEverything();
 
         foreach (var obj in assets)
@@ -92,7 +93,7 @@ public class PersistentObjects : ScriptableObject
             //entityObject.id = EditorAssetDatabaseUtility.GenerateHash(obj).ToString();
             //entityObject.hash = EntityObject.
             
-            Assets.Add(entityObject);
+            this.assets.Add(entityObject);
         }
     }
 
