@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.unity.addressables": "1.14.2",
+    "com.unity.addressables": "1.15.1",
     "com.unity.collections": "0.9.0-preview.5",
     "com.unity.dots.editor": "0.9.0-preview.1",
     "com.unity.ide.rider": "2.0.5",

@@ -29,9 +29,9 @@ namespace DOTS.Serialization
         /// </summary>
         /// <returns></returns>
         [MenuItem("Serialize/UpdateAssetMap")]
-        public static AssetMap UpdateAssetMap()
+        public static DiskAssetMap UpdateAssetMap()
         {
-            var map = new AssetMap();
+            var map = new DiskAssetMap();
 
             var addressableAssetEntries = UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings
                 .groups[1].entries;//DefaultAddressableAssetEntries();
@@ -58,11 +58,11 @@ namespace DOTS.Serialization
         /// </summary>
         /// <param name="assetEntry"></param>
         /// <returns></returns>
-        public static AssetMap.AssetKey GetAssetKey(AddressableAssetEntry assetEntry)
+        public static DiskAssetMap.AssetKey GetAssetKey(AddressableAssetEntry assetEntry)
         {
             var key = GetKey(assetEntry.MainAsset);
             var address = assetEntry.address;
-            return new AssetMap.AssetKey {Key = key, Address = address};
+            return new DiskAssetMap.AssetKey {Key = key, Address = address};
         }
         
         /// <summary>
@@ -103,9 +103,9 @@ namespace DOTS.Serialization
         public static void ParseJsonAssetMap()
         {
             var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
-            AssetMap assetMap = JsonUtility.FromJson<AssetMap>(json);
-            Debug.Log(assetMap);
-            foreach (var pair in assetMap.AssetMapping)
+            DiskAssetMap diskAssetMap = JsonUtility.FromJson<DiskAssetMap>(json);
+            Debug.Log(diskAssetMap);
+            foreach (var pair in diskAssetMap.AssetMapping)
             {
                 var key = pair.Key;
                 var address = pair.Address;
@@ -123,13 +123,13 @@ namespace DOTS.Serialization
         /// Returns the last saved asset map.
         /// </summary>
         /// <returns></returns>
-        public static AssetMap GetSavedAssetMap()
+        public static DiskAssetMap GetSavedAssetMap()
         {
             // unsure but just recreates the assetmap just in case not up to date. perf might degrade as this gets bigger
             CreateJsonAssetMap();
             
             var json = File.ReadAllText(Application.persistentDataPath + "/Saves/AssetMap.json");
-            AssetMap assetMap = JsonUtility.FromJson<AssetMap>(json);
+            DiskAssetMap diskAssetMap = JsonUtility.FromJson<DiskAssetMap>(json);
             
             /*foreach (var assetkey in assetMap.AssetMapping)
             {
@@ -142,7 +142,7 @@ namespace DOTS.Serialization
                     Debug.Log(result);
             }*/
 
-            return assetMap;
+            return diskAssetMap;
         }
         
         

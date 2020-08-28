@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/AssetMap.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/AssetMap.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PersistentObjects.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PersistentObjects.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityObjects.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnityObjects.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +42,14 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes.Editor/SceneImporterData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Serialization/BinarySerialization.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes.Hybrid.Tests/Editmode/PatchingEndToEndWithSerialization.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BinarySerialization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes.Editor/EditorEntityScenes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GuidAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/XMLEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PrefabId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BCA4D4C4-517C-45B8-932D-90BBCBA6590D/7a/bb990e6f/ReferencedUnityObjects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/ManagedComponentStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/NewAssetUtility.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,11 +57,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EntityAsset.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/EditorAssetDatabaseUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/EntityRemapUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DebugJsonData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/SerializeUtilityHybrid.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TemporaryMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Scenes/Hybrid/ReferencedUnityObjects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities.Editor.Tests/EntityDebuggerTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/DebugJsonData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/ComponentSystemBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.13.0-preview.24/Unity.Entities/Stubs/Unity.Assertions/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QueryReferences.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,9 +107,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/SerializedReferences.cs" />
         <option value="$PROJECT_DIR$/Assets/PrefabId.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FileHelper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/NewAssetUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetMapUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/NewAssetUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AssetMapUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReferencedObjects/AssetMap.cs" />
       </list>
     </option>

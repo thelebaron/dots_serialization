@@ -7,8 +7,8 @@ namespace DOTS.Serialization
     /// <summary>
     /// A map listing of a key: the name+type and address: addressable address
     /// </summary>
-    [System.Serializable]
-    public class AssetMap
+    [Serializable]
+    public class DiskAssetMap
     {
         [SerializeField] public List<AssetKey> AssetMapping = new List<AssetKey>();// { get; private set; }
         [System.Serializable]
@@ -22,7 +22,7 @@ namespace DOTS.Serialization
     /// <summary>
     /// Stores a list of UObjects
     /// </summary>
-    [System.Serializable]
+    [Serializable]
     public class WObjects
     {
         public UObject[] Objects;
@@ -30,7 +30,7 @@ namespace DOTS.Serialization
     /// <summary>
     /// Managed UnityObject with a type and an addressable address.
     /// </summary>
-    [System.Serializable]
+    [Serializable]
     public class UObject
     {
         public string Address { get; set; }

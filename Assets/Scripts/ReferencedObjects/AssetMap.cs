@@ -13,16 +13,8 @@ using DOTS.Serialization.ReferencedObjects;
 
 public class AssetMap : ScriptableObject
 {
-    //public UnityObject Target;
-    //public ReferencedUnityObjects ReferencedUnityObjects;
-    [FormerlySerializedAs("Assets")] public List<EntityObject> assets;
-
-   /* public static ReferencedUnityObjects RemappedObjects()
-    {
-        var objRefs = UnityEngine. ScriptableObject. CreateInstance<ReferencedUnityObjects>();
-        // find and compare with json
-        return null;
-    }*/
+    public List<EntityObject> assets;
+    
     
 #if UNITY_EDITOR
     
@@ -34,48 +26,6 @@ public class AssetMap : ScriptableObject
         asset.Refresh();
     }
     
-    /*/// <summary>
-    /// Convert a referenced object to unique id
-    /// </summary>
-    [ContextMenu("ConvertTarget")]
-    public void ConvertObject()
-    {
-        var entityObject = new EntityObject
-        {
-            referencedObject = Target, 
-            id = Guid.Parse(Target.name + Target.GetType()).ToString()
-        };
-
-        //var id = Target.GetHashCode() + Target.GetInstanceID();
-
-        //entityObject.id = id;
-        Assets.Add(entityObject);
-    }*/
-
-    /*/// <summary>
-    /// just log basic info about all items in the list
-    /// </summary>
-    [ContextMenu("Log")]
-    public void LogAllEntry()
-    {
-        var i = 0;
-        foreach (var asset in ReferencedUnityObjects.Array)
-        {
-            i++;
-            // Get size kb
-            long   size = 0;
-            object o    = asset;
-            using (Stream s = new MemoryStream()) {
-                var formatter = new BinaryFormatter();
-                formatter.Serialize(s, o);
-                size = s.Length;
-            }
-
-            Debug.Log("asset name: " + asset.name + " | size: " + size);//+ " | hash: " +  asset.GetHashCode());
-            
-        }
-    }
-    */
     [ContextMenu("GetEveryAsset")]
     public void Refresh()
     {
@@ -87,13 +37,10 @@ public class AssetMap : ScriptableObject
         {
             var entityObject = new EntityObject(obj);
         
-            //entityObject.referencedObject = obj;
-            
-            //entityObject.id = EditorAssetDatabaseUtility.GenerateHash(obj).ToString();
-            //entityObject.hash = EntityObject.
-            
             this.assets.Add(entityObject);
         }
+
+        Debug.Log("Refreshed Assetmap with " + assets.Count  + " assets.");
     }
 
 
@@ -105,8 +52,6 @@ public class AssetMap : ScriptableObject
 public class EntityObject
 {
     public UnityObject referencedObject;
-    //public string id;
-    //public int guid;
     
     public Hash128 hash;
     
