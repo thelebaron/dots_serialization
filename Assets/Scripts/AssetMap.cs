@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Utility;
 using Hash128 = Unity.Entities.Hash128;
 using UnityObject = UnityEngine.Object;

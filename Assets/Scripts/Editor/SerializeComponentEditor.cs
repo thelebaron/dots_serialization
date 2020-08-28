@@ -13,35 +13,30 @@ using UnityEngine;
 
 [CustomEditor(typeof(SerializeComponent))]
 [CanEditMultipleObjects]
-public class XMLEditor : Editor
+public class SerializeComponentEditor : Editor
 {
-    string _FileLocation, _FileName, _FileNameJSON, _FileNameYAML;
-    private string jsonpath;
-    private string xmlpath;
-    private string yamlpath;
+    private string        fileLocation, fileName, fileNameJson, fileNameYaml;
+    private string        jsonpath;
+    private string        xmlpath;
+    private string        yamlpath;
     private EntityManager em;
     
 
     
     private void OnEnable()
     {
-        _FileLocation = Application.persistentDataPath; 
-        _FileName     = "SaveData.xml";
-        _FileNameJSON = "SaveData.json";
-        _FileNameYAML = "World.yaml";
-        xmlpath  = _FileLocation + "\\" + _FileName;
-        jsonpath = _FileLocation + "\\" + _FileNameJSON;
-        yamlpath = _FileLocation + "\\" + _FileNameYAML;
+        fileLocation = Application.persistentDataPath; 
+        fileName     = "SaveData.xml";
+        fileNameJson = "SaveData.json";
+        fileNameYaml = "World.yaml";
+        xmlpath  = fileLocation + "\\" + fileName;
+        jsonpath = fileLocation + "\\" + fileNameJson;
+        yamlpath = fileLocation + "\\" + fileNameYaml;
         if (World.All.Count == 0) 
             return;
         
         em = World.DefaultGameObjectInjectionWorld.EntityManager;
         
-    }
-
-    private void OnSceneGUI()
-    {
-        var node = target as SerializeComponent;
     }
 
     public override void OnInspectorGUI()
@@ -84,8 +79,6 @@ public class XMLEditor : Editor
         {
             
             var allGameObjects = FindObjectsOfType<GameObject>().ToList();
-
-            script.SavedGameObjects = allGameObjects;
 
             GameObject ignore = null;
             foreach (var go in allGameObjects)
@@ -151,13 +144,6 @@ public class XMLEditor : Editor
                 writer.NewLine = "\n";
                 SerializeUtility.SerializeWorldIntoYAML(em, writer, false); // is yaml just debugging?
             }
-            /*
-            {
-                // json make asset map json file
-                var path = _FileLocation + "\\" + "SerializedAssetMap.json";;
-                var jsondata = JsonUtility.ToJson(AssetMapUtilities.UpdateAddressables(), true);
-                File.WriteAllText(path, jsondata);
-            }*/
         }
     }
 
@@ -184,7 +170,7 @@ public class XMLEditor : Editor
         //using (var writer = new StreamWriter(yamlpath))
         //{
             // Path for saving world
-            var binaryWorldPath =  _FileLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
+            var binaryWorldPath =  fileLocation + "\\" + "DefaultWorld.world"; // path backslash for system access
             var binaryWriter    = new StreamBinaryWriter(binaryWorldPath);
             
             // Save whole world
@@ -252,7 +238,7 @@ public class XMLEditor : Editor
         //var refObjects = objects[0] as ReferencedUnityObjects;
         
         // To generate the file we'll test against
-        var binaryPath =  _FileLocation + "\\" + "DefaultWorld.world";
+        var binaryPath =  fileLocation + "\\" + "DefaultWorld.world";
             
         // need an empty world to do this
         var loadingWorld = new World("SavingWorld");

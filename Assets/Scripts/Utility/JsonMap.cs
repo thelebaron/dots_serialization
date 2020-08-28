@@ -21,9 +21,9 @@ namespace Utility
         /// Saves out 
         /// </summary>
         /// <param name="objects"></param>
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
         [MenuItem("JSONSTUFF/CreateAssetMap")]
-#endif
+#endif*/
         public static void CreateJson(ReferencedUnityObjects objects)
         {
             var map = new DiskAssetMap();
@@ -51,9 +51,9 @@ namespace Utility
         /// <summary>
         /// Saves out 
         /// </summary>
-    #if UNITY_EDITOR
+    /*#if UNITY_EDITOR
         [MenuItem("JSON1STUFF/LoadJsonAssetMap")]
-    #endif
+    #endif*/
         public static ReferencedUnityObjects LoadJsonToUnity()
         {
             // Load the json file
@@ -64,13 +64,22 @@ namespace Utility
             instance.Array = new Object[assetMap.Array.Length];
             var array = new Object[assetMap.Array.Length];
             
+            
+    #if UNITY_EDITOR
                 // Make a dummy file to test in editor
-                var dummyGameObject = new GameObject();
+                var dummyGameObject = GameObject.Find("Dummy");
+                if(dummyGameObject==null)
+                    dummyGameObject = new GameObject();
+                
                 dummyGameObject.name = "Dummy";
                 // DEBUGGING: Create dummy monobehaviour
-                var debugJsonData = dummyGameObject.AddComponent<DebugJsonData>();
+                
+                var debugJsonData = dummyGameObject.GetComponent<DebugJsonData>();
+                if(debugJsonData==null)
+                    debugJsonData = dummyGameObject.AddComponent<DebugJsonData>();
+                
                 debugJsonData.Array = new Object[assetMap.Array.Length];
-            
+    #endif
             // Next get the actual object references and their ids from the persistent objects asset(note this asset should be created in editor or during a build).
             var assetArray = Resources.Load<AssetMap>("AssetMap").assets;// PrefabId.Instance().Assets;
             
@@ -84,7 +93,10 @@ namespace Utility
                     var unityObject = actualObject.referencedObject;
                     // Match array index to object
                     array[i] = unityObject;
-                        debugJsonData.Array[i] = unityObject;
+                    
+    #if UNITY_EDITOR
+                    debugJsonData.Array[i] = unityObject;
+    #endif
                     instance.Array[i]      = unityObject;
                     
                 }
