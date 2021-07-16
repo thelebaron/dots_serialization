@@ -34,7 +34,7 @@ public class SerializePrefabSystem : SystemBase
         Entities
             .WithAll<Prefab>()
             .WithNone<PrefabSystemState>()
-            .ForEach((Entity entity, in SerializePrefab serializeablePrefab) =>
+            .ForEach((Entity entity, in SaveEntity serializeablePrefab) =>
                 {
                     prefabs.Add(serializeablePrefab.Value, entity);
                     commandBuffer.AddComponent<PrefabSystemState>(entity);

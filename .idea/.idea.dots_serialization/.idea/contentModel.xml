@@ -24,16 +24,16 @@
           <e p="PrefabSerialization" t="Include">
             <e p="Editor" t="Include">
               <e p="Constants.cs" t="Include" />
-              <e p="EntityPrefabEditor.cs" t="Include" />
-              <e p="EntityPrefabIdHeader.cs" t="Include" />
-              <e p="PrefabWindow.cs" t="Include" />
+              <e p="SaveEntitiesWindow.cs" t="Include" />
+              <e p="SaveEntityIdHeader.cs" t="Include" />
+              <e p="SaveEntityToDiskEditor.cs" t="Include" />
               <e p="Utilities" t="Include">
                 <e p="EditorIcons.cs" t="Include" />
               </e>
             </e>
-            <e p="EntityPrefab.cs" t="Include" />
             <e p="PrefabSerializeUtility.cs" t="Include" />
-            <e p="SerializePrefab.cs" t="Include" />
+            <e p="SaveEntity.cs" t="Include" />
+            <e p="SaveEntityToDisk.cs" t="Include" />
           </e>
           <e p="SaveManager.cs" t="Include" />
           <e p="SerializeComponent.cs" t="Include" />

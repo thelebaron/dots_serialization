@@ -11,8 +11,6 @@ using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 public static class PrefabSerializeUtility
 {
-    
-    [MenuItem("Prefabs/UniqueGuid dont use")]
     public static string UniqueGuid()
     {
         var dictionary = new Dictionary<string, string>();
@@ -22,9 +20,9 @@ public static class PrefabSerializeUtility
         {
             GameObject prefab =  UnityEditor.PrefabUtility.LoadPrefabContents(path);
             
-            if (prefab.GetComponent<EntityPrefab>()!=null)
+            if (prefab.GetComponent<SaveEntityToDisk>()!=null)
             {
-                var serializeable = prefab.GetComponent<EntityPrefab>();
+                var serializeable = prefab.GetComponent<SaveEntityToDisk>();
                 if (!dictionary.ContainsKey(serializeable.guid))
                 {
                     dictionary.Add(serializeable.guid, path);
@@ -80,7 +78,7 @@ public static class PrefabSerializeUtility
         {
             var prefab =  UnityEditor.PrefabUtility.LoadPrefabContents(path);
             // Only add serializeable prefabs to the list
-            if (prefab.GetComponent<EntityPrefab>()!=null)
+            if (prefab.GetComponent<SaveEntityToDisk>()!=null)
             {
                 prefabs.Add(path);
             }

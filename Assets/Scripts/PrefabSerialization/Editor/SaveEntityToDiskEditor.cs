@@ -3,13 +3,13 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(EntityPrefab))]
+[CustomEditor(typeof(SaveEntityToDisk))]
 [CanEditMultipleObjects]
-public class EntityPrefabEditor : Editor
+public class SaveEntityToDiskEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        var script = target as EntityPrefab;
+        var script = target as SaveEntityToDisk;
 
    
         /*if (GUILayout.Button("Generate Prefab Guid"))

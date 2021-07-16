@@ -3,7 +3,7 @@ using Unity.Collections;
 using Unity.Entities;
 
 [Serializable]
-public struct SerializePrefab : IComponentData
+public struct SaveEntity : IComponentData
 {
     public FixedString32 Value;
 }
