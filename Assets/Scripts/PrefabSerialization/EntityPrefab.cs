@@ -2,10 +2,8 @@
 using Unity.Entities;
 using UnityEngine;
 
-namespace PrefabSerialization
-{
     [DisallowMultipleComponent]
-    public class PrefabId : MonoBehaviour, IConvertGameObjectToEntity
+    public class EntityPrefab : MonoBehaviour, IConvertGameObjectToEntity
     {
         public string guid;
         
@@ -14,4 +12,3 @@ namespace PrefabSerialization
             dstManager.AddComponentData(entity, new SerializePrefab {Value = guid});
         }
     }
-}

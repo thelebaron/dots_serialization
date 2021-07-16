@@ -40,12 +40,13 @@ public class PrefabWindow : EditorWindow
             
             //Debug.Log(prefab);
             // should always have the component as we filter it in the GetAllPrefabs helper
-            if (prefab.TryGetComponent<PrefabId>(out var serializeable))
+            if (prefab.TryGetComponent<EntityPrefab>(out var serializeable))
             {
                 //Debug.Log(serializeable.guid);
                 if (GUILayout.Button(path, GUILayout.MaxWidth(600)))
                 {
                     //serializeable.guid = PrefabSerializeUtility.UniqueGuid();
+                    Selection.activeObject = AssetDatabase.LoadAssetAtPath<Object>(path); 
                 }
                 
                 EditorGUILayout.LabelField("", GUILayout.MaxWidth(60));

@@ -4,6 +4,7 @@ using System.Linq;
 using PrefabSerialization;
 using PrefabSerialization.Editor;
 using UnityEditor;
+using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 
 namespace Unity.Entities.Editor
@@ -53,33 +54,61 @@ namespace Unity.Entities.Editor
                 List<GameObject> gameObjectToAddComponentList = new List<GameObject>();
                 
                 
-                if(selectedGameObject.TryGetComponent<PrefabId>(out var serializeable))
+                if(selectedGameObject.TryGetComponent<EntityPrefab>(out var serializeable))
                 {
                     EditorGUILayout.BeginHorizontal();
                     // convert icon
                     EditorGUILayout.LabelField(EditorGUIUtility.TrTextContentWithIcon(EntityPrefabHeaderTextStrings.PrefabEntity, EditorIcons.EntityPrefab), EditorStyles.label, GUILayout.MaxWidth(130));
-                    if (GUILayout.Button("Generate Guid", GUILayout.MaxWidth(120)))
+                    
+                    
+                    //EditorGUILayout.LabelField("", GUILayout.MaxWidth(15));
+                    EditorGUILayout.LabelField("id: ", GUILayout.MaxWidth(15));
+                    EditorGUILayout.LabelField(serializeable.guid, EditorStyles.boldLabel, GUILayout.MaxWidth(120));
+                    
+                    if (GUILayout.Button("Generate Id", GUILayout.MaxWidth(120)))
                     {
                         serializeable.guid = PrefabSerializeUtility.UniqueGuid();
                         
+                        // If prefab is selected in scene
                         if (PrefabUtility.IsPartOfPrefabInstance(serializeable.gameObject))
                         {
-                            Debug.Log("saving prefab instance");
+                            //Debug.Log("IsPartOfPrefabInstance");
                             var prefab = PrefabUtility.GetCorrespondingObjectFromSource(serializeable);
                             prefab.guid = serializeable.guid;
                             PrefabUtility.SavePrefabAsset(prefab.gameObject);
                         }
+                        // If prefab is selected from project overview
                         if (PrefabUtility.IsPartOfPrefabAsset(serializeable.gameObject))
                         {
-                            Debug.Log("saving prefab asset");
+                            //Debug.Log("IsPartOfPrefabAsset");
                             PrefabUtility.SavePrefabAsset(serializeable.gameObject);
                         }
-
+                        
+                        /*if (PrefabUtility.IsPartOfNonAssetPrefabInstance(serializeable.gameObject))
+                        {
+                            //Debug.Log("IsPartOfNonAssetPrefabInstance");
+                            //PrefabUtility.SavePrefabAsset(serializeable.gameObject);
+                        }
+                        if (PrefabUtility.IsPartOfModelPrefab(serializeable.gameObject))
+                        {
+                            //Debug.Log("IsPartOfModelPrefab");
+                            //PrefabUtility.SavePrefabAsset(serializeable.gameObject);
+                        }
+                        if (PrefabUtility.IsDisconnectedFromPrefabAsset(serializeable.gameObject))
+                        {
+                            //Debug.Log("IsDisconnectedFromPrefabAsset");
+                            //PrefabUtility.SavePrefabAsset(serializeable.gameObject);
+                        }*/
+                        
+                        // If prefab is in stage mode
+                        if(PrefabStageUtility.GetCurrentPrefabStage()!=null)
+                        {
+                            //Debug.Log("IsStage?");
+                            var prefabPath = PrefabStageUtility.GetCurrentPrefabStage().assetPath;
+                            var prefabRoot = PrefabStageUtility.GetCurrentPrefabStage().prefabContentsRoot;
+                            PrefabUtility.SaveAsPrefabAsset(prefabRoot,prefabPath);
+                        }
                     }
-                    
-                    EditorGUILayout.LabelField("", GUILayout.MaxWidth(60));
-                    EditorGUILayout.LabelField("Prefab", GUILayout.MaxWidth(60));
-                    EditorGUILayout.LabelField(serializeable.guid, EditorStyles.boldLabel, GUILayout.MaxWidth(120));
                     EditorGUILayout.EndHorizontal();
 
 

@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7967585505582945685, guid: cf83d94188b45b8489206479858d13b9, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7967585505582945685, guid: cf83d94188b45b8489206479858d13b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -177,10 +177,6 @@ PrefabInstance:
     - target: {fileID: 7967585505582945692, guid: cf83d94188b45b8489206479858d13b9, type: 3}
       propertyPath: m_Name
       value: DogCube (18)_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8673501583865253361, guid: cf83d94188b45b8489206479858d13b9, type: 3}
-      propertyPath: guid
-      value: smi75zfl9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf83d94188b45b8489206479858d13b9, type: 3}

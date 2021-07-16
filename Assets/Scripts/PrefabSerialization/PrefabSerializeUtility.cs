@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using PrefabSerialization;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -23,9 +22,9 @@ public static class PrefabSerializeUtility
         {
             GameObject prefab =  UnityEditor.PrefabUtility.LoadPrefabContents(path);
             
-            if (prefab.GetComponent<PrefabId>()!=null)
+            if (prefab.GetComponent<EntityPrefab>()!=null)
             {
-                var serializeable = prefab.GetComponent<PrefabId>();
+                var serializeable = prefab.GetComponent<EntityPrefab>();
                 if (!dictionary.ContainsKey(serializeable.guid))
                 {
                     dictionary.Add(serializeable.guid, path);
@@ -81,7 +80,7 @@ public static class PrefabSerializeUtility
         {
             var prefab =  UnityEditor.PrefabUtility.LoadPrefabContents(path);
             // Only add serializeable prefabs to the list
-            if (prefab.GetComponent<PrefabId>()!=null)
+            if (prefab.GetComponent<EntityPrefab>()!=null)
             {
                 prefabs.Add(path);
             }
