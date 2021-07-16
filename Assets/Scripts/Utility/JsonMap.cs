@@ -113,7 +113,6 @@ namespace Utility
     public class DiskAssetMap
     {
         public SerializedObjectHash[] Array;
-
         
         /// <summary>
         /// Create a matching serializable list of object ids from a Entities ReferencedUnityObjects instance when serializing.

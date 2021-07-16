@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Xml;
-using DOTS.Serialization;
-using ReferencedObjects;
 using Unity.Assertions;
 using Unity.Entities;
 using Unity.Entities.Serialization;
-using Unity.Physics.Systems;
 using Unity.Scenes;
 using UnityEngine;
 using Utility;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -34,7 +30,7 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
 {
     public bool saveOnStart = true;
     public bool useYaml;
-    public MyData myData;
+    //public MyData myData;
     public List<GameObject> HiddenGameObjects;
     
 
@@ -170,7 +166,14 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         } // file is automatically closed after reaching the end of the using block
 
         
-        //Debug.Log("Serialize");
+        var yamlpath     = saveLocation + "\\" + "DefaultWorld.yaml";
+        using (var streamWriter =  new StreamWriter(yamlpath))
+        {
+            streamWriter.NewLine = "\n";
+            // Save whole world
+            SerializeUtility.SerializeWorldIntoYAML(em, streamWriter, false);
+        }
+
 #if UNITY_EDITOR
         // Create an asset from the output. This doesnt work during runtime.
         AssetDatabase.CreateAsset(unityObjects, unityobjectsAsset);
@@ -206,6 +209,34 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
     }
 
 
+    private void SaveJsonYamlXml(SerializeComponent script)
+    {
+        {
+            //xml
+            /*var serializer = new XmlSerializer(typeof(MyData));
+            var textWriter = new StreamWriter(saveLocation + "\\" + "DefaultWorld.xml");
+            serializer.Serialize(textWriter, script.myData);
+            textWriter.Close();*/
+        }
+        
+        {
+            // json
+            //var jsondata = JsonUtility.ToJson(script.myData, true);
+            //File.WriteAllText(saveLocation + "\\" + "DefaultWorld.json", jsondata);
+        }
+
+        {
+            // yaml dots
+            if (World.All.Count < 1) return;
+            using (var writer = new StreamWriter(saveLocation + "\\" + "DefaultWorld.yaml"))
+            {
+                var em = World.DefaultGameObjectInjectionWorld.EntityManager;
+                // Save world to yaml
+                writer.NewLine = "\n";
+                SerializeUtility.SerializeWorldIntoYAML(em, writer, false); // is yaml just debugging?
+            }
+        }
+    }
 }
 
 

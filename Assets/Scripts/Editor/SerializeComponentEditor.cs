@@ -124,14 +124,14 @@ public class SerializeComponentEditor : Editor
             //xml
             var serializer = new XmlSerializer(typeof(MyData));
             var textWriter = new StreamWriter(xmlpath);
-            serializer.Serialize(textWriter, script.myData);
+            //serializer.Serialize(textWriter, script.myData);
             textWriter.Close();
         }
         
         {
             // json
-            var jsondata = JsonUtility.ToJson(script.myData, true);
-            File.WriteAllText(jsonpath, jsondata);
+            //var jsondata = JsonUtility.ToJson(script.myData, true);
+            //File.WriteAllText(jsonpath, jsondata);
         }
 
         {

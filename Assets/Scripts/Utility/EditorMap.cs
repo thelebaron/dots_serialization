@@ -44,7 +44,7 @@ namespace Utility
             {
                 // check if its a prefab
                 var assetObject = AssetDatabase.LoadAssetAtPath<Object>(path);
-                var assetType = PrefabUtility.GetPrefabAssetType(assetObject);
+                var assetType = UnityEditor.PrefabUtility.GetPrefabAssetType(assetObject);
                 
                 // if its a prefab, get its meshes -todo recursive child search
                 switch (assetType)
@@ -124,7 +124,6 @@ namespace Utility
             {
                 list.Add(PrimitiveHelper.GetPrimitiveMesh(primitive));
             }
-            
             
             return list;
         }
