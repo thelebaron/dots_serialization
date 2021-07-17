@@ -11,11 +11,15 @@
         <e p="Scripts" t="Include">
           <e p="AssetMap.cs" t="Include" />
           <e p="BinarySerialization.cs" t="Include" />
+          <e p="CommentComponent.cs" t="Include" />
           <e p="DummyScripts" t="Include">
             <e p="DummyMoveSystem.cs" t="Include" />
             <e p="DummySaveAuthoring.cs" t="Include" />
           </e>
           <e p="Editor" t="Include">
+            <e p="DrawHierarchyIcon.cs" t="Include" />
+            <e p="FavouriteBarIcons.cs" t="Include" />
+            <e p="FavouritesBarEditor.cs" t="Include" />
             <e p="SerializeComponentEditor.cs" t="Include" />
           </e>
           <e p="GameWindow" t="Include">
@@ -24,9 +28,10 @@
           <e p="PrefabSerialization" t="Include">
             <e p="Editor" t="Include">
               <e p="Constants.cs" t="Include" />
-              <e p="SaveEntitiesWindow.cs" t="Include" />
+              <e p="DrawHierarchyIcon.cs" t="Include" />
               <e p="SaveEntityIdHeader.cs" t="Include" />
               <e p="SaveEntityToDiskEditor.cs" t="Include" />
+              <e p="SaveEntityWindow.cs" t="Include" />
               <e p="Utilities" t="Include">
                 <e p="EditorIcons.cs" t="Include" />
               </e>

@@ -20,31 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/SaveEntityToDisk icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/SaveEntityToDisk icon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.unity.dots.editor@0.10.0-preview/Gizmos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.unity.dots.editor@0.10.0-preview/Gizmos/ConvertToEntity icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.unity.dots.editor@0.10.0-preview/Gizmos/ConvertToEntity icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/CommentIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/CommentIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AcUnit (1).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/AcUnit (1).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/EntityPrefab icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/EntityPrefab icon.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AcUnit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AcUnit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogCube (18).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DogCube (18).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/EntityPrefabEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/EntityPrefabEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/EntityPrefabIdHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/EntityPrefabIdHeader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/EntityPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/EntityPrefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSerializeUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSerializeUtility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SerializePrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SerializePrefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SerializePrefabSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SerializePrefabSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +47,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.10.0-preview/Editor/EntityHierachy/EntityHierarchyWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/half.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b5/c70a842b/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b3/43a93d4d/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GuidUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DDF8EAC-3856-492A-B1B8-CF42618915CC/99/49d41291/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CommentComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E81E1-CB34-41CC-97D2-6B1910DAAE77/fb/027792ca/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/20/d4ba8cd9/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.14.0-preview.19/Unity.Entities.Editor/Editors/ComponentDataProxyBaseEditor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -84,9 +80,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SerializePrefabSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.14.0-preview.19/Unity.Entities.Editor/CommonGUI/SystemInclusionList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/StyleSheets/Images/LightSkin/TimelineKeyframe.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.10.0-preview/Editor/Utilities/EditorIcons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Editor/Utilities/StatusMessageUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,6 +115,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.14.0-preview.19/Unity.Entities/Stubs/Unity/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/uint2x2.gen.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Hybrid/Conversion/BaseShapeConversionSystem_Data.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -152,12 +151,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSerializeUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/EntityPrefabIdHeader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SerializeablePrefabs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveableEntities.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntitiesWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/Comment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CommentComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DrawHierarchyIcon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" />
       </list>
     </option>
   </component>
@@ -229,7 +234,7 @@
       <workItem from="1626298909926" duration="6723000" />
       <workItem from="1626359116330" duration="230000" />
       <workItem from="1626359406534" duration="72000" />
-      <workItem from="1626359499454" duration="28311000" />
+      <workItem from="1626359499454" duration="39691000" />
     </task>
     <servers />
   </component>
@@ -255,11 +260,11 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1626455239890">
+    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1626478324226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1293" y="95" width="666" height="849" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@-1920.0.1920.1040" timestamp="1624062240100" />
-    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626455239890" />
+    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626478324226" />
     <state x="943" y="315" key="search.everywhere.popup" timestamp="1626297741840">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

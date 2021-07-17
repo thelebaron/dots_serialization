@@ -1,7 +1,6 @@
 ﻿
 using System.Collections.Generic;
 using System.Linq;
-using PrefabSerialization;
 using PrefabSerialization.Editor;
 using UnityEditor;
 using UnityEditor.Experimental.SceneManagement;
@@ -54,6 +53,19 @@ namespace Unity.Entities.Editor
                 List<Component> componentToRemoveFromGOList = new List<Component>();
                 List<GameObject> gameObjectToAddComponentList = new List<GameObject>();
                 
+                /*foreach (var gameObject in TargetsList)
+                {
+                    var convertToEntityComponent = gameObject.GetComponent<ConvertToEntity>();
+
+                    if (convertToEntityComponent != null)
+                    {
+                        gameObjectToAddComponentList.Add(gameObject);
+                    }
+                    else
+                    {
+                        componentToRemoveFromGOList.Add(convertToEntityComponent);
+                    }
+                }*/
                 
                 if(selectedGameObject.TryGetComponent<SaveEntityToDisk>(out var serializeable))
                 {
@@ -68,13 +80,16 @@ namespace Unity.Entities.Editor
                     EditorGUILayout.LabelField("id: ", GUILayout.MaxWidth(15));
                     EditorGUILayout.LabelField(serializeable.guid, EditorStyles.boldLabel, GUILayout.MaxWidth(120));
 
+                    
+                    //EditorGUI.Toggle()
                     overrideEnabled = EditorGUILayout.Foldout(overrideEnabled, "override");
-                    if(overrideEnabled){
-                    //overrideEnabled = EditorGUILayout.BeginToggleGroup ("Override", overrideEnabled);
-                    if (GUILayout.Button("New Id", GUILayout.MaxWidth(65)))
+                    if(overrideEnabled)
                     {
-                        RegenerateId(serializeable);
-                    }
+                        //overrideEnabled = EditorGUILayout.BeginToggleGroup ("Override", overrideEnabled);
+                        if (GUILayout.Button("New Id", GUILayout.MaxWidth(65)))
+                        {
+                            RegenerateId(serializeable);
+                        }
                     
                     }
                     //EditorGUILayout.EndToggleGroup();

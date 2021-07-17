@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7113445510444339537}
   - component: {fileID: 7113445510444339536}
   - component: {fileID: 7113445510444339543}
-  - component: {fileID: 3925239225192645389}
+  - component: {fileID: -1985782368611258428}
   m_Layer: 0
   m_Name: Sphere_3
   m_TagString: Untagged
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ConversionMode: 0
---- !u!114 &3925239225192645389
+--- !u!114 &-1985782368611258428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d4b05eb9f249588f381e72b6ccafc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guid: dgan11et9
+  guid: htgyao1p9
