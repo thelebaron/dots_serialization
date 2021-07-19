@@ -56,27 +56,29 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
         // pos x,y, size x,y
         if (GUI.Button(new Rect(15, 50, 100, 35), "Save"))
         {
-            em.CompleteAllJobs();
-            ToggleSystems(false);
-            SaveData(out var objects);
-            ToggleSystems(true);
+            SaveManager.instance.TestSave();
+            //em.CompleteAllJobs();
+            //ToggleSystems(false);
+            //SaveData(out var objects);
+            //ToggleSystems(true);
             
             
-            JsonMap.CreateJson(objects);
+            //JsonMap.CreateJson(objects);
 
         }
 
         if (GUI.Button(new Rect(15, 100, 100, 35), "Load"))
         {
-            em.CompleteAllJobs();
-            ToggleSystems(false);
+            SaveManager.instance.TestLoad();
+            //em.CompleteAllJobs();
+            //ToggleSystems(false);
 
-            var instance = JsonMap.LoadJsonToUnity();
-            
-            LoadData(instance);
-            
-            ToggleSystems(true);
-            
+            //var instance = JsonMap.LoadJsonToUnity();
+
+            //LoadData(instance);
+
+            //ToggleSystems(true);
+
             //NewAssetUtility.LoadJsonToUnity();
         }
 
@@ -85,9 +87,10 @@ public class SerializeComponent : MonoBehaviour, IConvertGameObjectToEntity
             if(World.All.Count<1)
                 return;
             
-            World.DefaultGameObjectInjectionWorld.EntityManager.CompleteAllJobs();
             
-            World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery);
+            SaveManager.instance.TestDestroy();
+            //World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery);
+            //World.DefaultGameObjectInjectionWorld.EntityManager.DestroyAndResetAllEntities();
         }
         
     }

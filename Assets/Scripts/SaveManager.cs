@@ -1,13 +1,55 @@
-﻿using Unity.Collections;
+﻿using System.Diagnostics;
+using System.IO;
+using System.Text;
+using Unity.Collections;
 using Unity.Entities;
 using Unity.Entities.Serialization;
 using Unity.Physics;
 using Unity.Rendering;
 using UnityEngine;
+using Application = UnityEngine.Application;
+using Debug = UnityEngine.Debug;
 
 public class SaveManager : MonoBehaviour
 {
     private EntityQuery entitiesToSaveQuery;
+    public static SaveManager instance;
+
+    [UnityEngine.ContextMenu("Save")]
+    public void TestSave()
+    {
+        Save(Application.persistentDataPath);
+        OpenPath(Application.persistentDataPath);
+    }
+    
+    [UnityEngine.ContextMenu("Load")]
+    public void TestLoad()
+    {
+        Load(Application.persistentDataPath);
+    }
+
+    [UnityEngine.ContextMenu("Destroy")]
+    public void TestDestroy()
+    {
+        //World.DefaultGameObjectInjectionWorld.EntityManager.UniversalQuery
+        World.DefaultGameObjectInjectionWorld.EntityManager.DestroyEntity(entitiesToSaveQuery);
+    }
+    
+    void OpenPath(string path)
+    {
+        var myString = path.Replace(@"/","\\");
+        //var path = System.IO.Directory.GetCurrentDirectory() + "\\" + "Release" + "\\";
+        if (Directory.Exists(path))
+        {
+            var processStartInfo = new ProcessStartInfo
+            {
+                Arguments = myString,
+                FileName  = "explorer.exe"
+            };
+
+            Process.Start(processStartInfo);
+        }
+    }
     
     private void Start()
     {
@@ -20,12 +62,14 @@ public class SaveManager : MonoBehaviour
         {
             Any = new ComponentType[]
             {
-                typeof(SerializeableTag),
+                typeof(SaveEntity),
             },
             Options = EntityQueryOptions.Default
         };
         var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
         entitiesToSaveQuery = entityManager.CreateEntityQuery(savableEntities);
+
+        instance = this;
     }
 
     // Looks for and removes a set of components and then adds a different set of components to the same set
@@ -47,7 +91,7 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void Save(string filepath)
+    public void Save(string path)
     {
         /*
          * 1. Create a new world.
@@ -58,10 +102,11 @@ public class SaveManager : MonoBehaviour
          */
         
         EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-        using (var serializeWorld = new World("Serialization World"))
+        //var serializeWorld = new World("Serialization World");
+        using (var serializeWorld = new World("Saving World"))
         {
-            EntityManager serializeEntityManager = serializeWorld.EntityManager;
-            serializeEntityManager.CopyEntitiesFrom(entityManager, entitiesToSaveQuery.ToEntityArray(Allocator.Temp));
+            var serializeManager = serializeWorld.EntityManager;
+            serializeManager.CopyEntitiesFrom(entityManager, entitiesToSaveQuery.ToEntityArray(Allocator.Temp));
 
             // Remove RenderMesh and related components
             ReplaceComponents(
@@ -74,8 +119,8 @@ public class SaveManager : MonoBehaviour
                     typeof(HybridChunkInfo),
                     typeof(RenderBounds)
                 },
-                new ComponentType[] { typeof(MissingRenderMeshTag) },
-                serializeEntityManager
+                new ComponentType[] { typeof(RenderMeshRemoved) },
+                serializeManager
             );
 
             // Remove physics colliders
@@ -84,8 +129,8 @@ public class SaveManager : MonoBehaviour
                 {
                     typeof(PhysicsCollider),
                 },
-                new ComponentType[] { typeof(MissingPhysicsColliderTag) },
-                serializeEntityManager
+                new ComponentType[] { typeof(PhysicsColliderRemoved) },
+                serializeManager
             );
 
             // Remove blob assets.
@@ -95,25 +140,34 @@ public class SaveManager : MonoBehaviour
                     typeof(MyBlobComponent),
                 },
                 new ComponentType[] { typeof(MissingMyBlobComponentTag) },
-                serializeEntityManager
+                serializeManager
             );
             
             // Need to remove the SceneTag shared component from all entities because it contains an entity reference
             // that exists outside the subscene which isn't allowed for SerializeUtility. This breaks the link from the
             // entity to the subscene, but otherwise doesn't seem to cause any problems.
-            serializeEntityManager.RemoveComponent<SceneTag>(serializeEntityManager.UniversalQuery);
-            serializeEntityManager.RemoveComponent<SceneSection>(serializeEntityManager.UniversalQuery);
+            serializeManager.RemoveComponent<SceneTag>(serializeManager.UniversalQuery);
+            serializeManager.RemoveComponent<SceneSection>(serializeManager.UniversalQuery);
 
+            var binary =  path + "\\" + "DefaultWorld.world"; // path backslash for system access
+            var yaml = path + "\\" + "DefaultWorld.yaml";
             // Save
-            using (var writer = new StreamBinaryWriter(filepath))
+            using (var writer = new StreamBinaryWriter(binary))
             {
-                SerializeUtility.SerializeWorld(serializeEntityManager, writer);
+                SerializeUtility.SerializeWorld(serializeManager, writer);
+            }
+            
+            using (var writer = new StreamWriter(yaml))
+            {
+                writer.NewLine = "\n";
+                SerializeUtility.SerializeWorldIntoYAML(serializeManager, writer, false);
             }
         }
     }
 
     public void Load(string filepath)
     {
+        var binary =  filepath + "\\" + "DefaultWorld.world"; // path backslash for system access
         var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
 
         entityManager.DestroyEntity(entitiesToSaveQuery);
@@ -122,7 +176,7 @@ public class SaveManager : MonoBehaviour
         {
             ExclusiveEntityTransaction transaction = deserializeWorld.EntityManager.BeginExclusiveEntityTransaction();
 
-            using (var reader = new StreamBinaryReader(filepath))
+            using (var reader = new StreamBinaryReader(binary))
             {
                 SerializeUtility.DeserializeWorld(transaction, reader);
             }

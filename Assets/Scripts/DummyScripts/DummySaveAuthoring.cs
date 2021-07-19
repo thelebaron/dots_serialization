@@ -14,10 +14,6 @@ public class DummySaveAuthoring : MonoBehaviour, IConvertGameObjectToEntity
         //var dummy = new DummyComponent {ints = ints, Vector3s = new Vector3[10], MyDataFormats = dataformat};
         //var Hash128       = GuidUtility.GenerateGuid(dummy);
         
-        dstManager.AddComponentObject(entity, new DummyMoveSystem.RandomDirection
-        {
-            Direction = new float3(0,1,0)
-        });
 
         dstManager.AddComponent<SerializeableTag>(entity);
     }

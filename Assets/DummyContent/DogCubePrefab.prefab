@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1553098726340570211}
   - component: {fileID: 1553098726340570210}
   - component: {fileID: 1553098726340570209}
-  - component: {fileID: 1553098726340570208}
   - component: {fileID: 1553098726340570215}
   - component: {fileID: 1553098726340570214}
+  - component: {fileID: 7352544393546955491}
   m_Layer: 0
   m_Name: DogCubePrefab
   m_TagString: Untagged
@@ -98,22 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1553098726340570208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553098726340570213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4727c5ee4c14e1a9cabb89a17453555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AddClassComponent: 1
-  m_Trees: []
-  references:
-    version: 1
 --- !u!114 &1553098726340570215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +127,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7352544393546955491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553098726340570213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d4b05eb9f249588f381e72b6ccafc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guid: wrd5fw669

@@ -29,6 +29,7 @@
             <e p="Editor" t="Include">
               <e p="Constants.cs" t="Include" />
               <e p="DrawHierarchyIcon.cs" t="Include" />
+              <e p="PrefabDatabaseAuthoringEditor.cs" t="Include" />
               <e p="SaveEntityIdHeader.cs" t="Include" />
               <e p="SaveEntityToDiskEditor.cs" t="Include" />
               <e p="SaveEntityWindow.cs" t="Include" />
@@ -36,13 +37,15 @@
                 <e p="EditorIcons.cs" t="Include" />
               </e>
             </e>
-            <e p="PrefabSerializeUtility.cs" t="Include" />
+            <e p="LoadingSystem.cs" t="Include" />
+            <e p="PrefabDatabaseAuthoring.cs" t="Include" />
+            <e p="PrefabSystem.cs" t="Include" />
             <e p="SaveEntity.cs" t="Include" />
             <e p="SaveEntityToDisk.cs" t="Include" />
+            <e p="SaveEntityUtility.cs" t="Include" />
           </e>
           <e p="SaveManager.cs" t="Include" />
           <e p="SerializeComponent.cs" t="Include" />
-          <e p="SerializePrefabSystem.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="DebugJsonData.cs" t="Include" />
             <e p="EditorMap.cs" t="Include" />
@@ -69,7 +72,7 @@
             </e>
           </e>
         </e>
-        <e p="com.unity.dots.editor@0.10.0-preview" t="Include">
+        <e p="com.unity.dots.editor@0.12.0-preview.6" t="Include">
           <e p="Editor" t="Include">
             <e p="AssemblyInfo.cs" t="Include" />
             <e p="Common" t="Include">
@@ -77,6 +80,12 @@
               <e p="DOTSEditorWindow.cs" t="Include" />
             </e>
             <e p="Constants.cs" t="Include" />
+            <e p="Controls" t="Include">
+              <e p="TabView" t="Include">
+                <e p="TabContent.cs" t="Include" />
+                <e p="TabView.cs" t="Include" />
+              </e>
+            </e>
             <e p="Conversion" t="Include">
               <e p="EntityConversionData.cs" t="Include" />
               <e p="EntityConversionHeader.cs" t="Include" />
@@ -93,22 +102,23 @@
               </e>
               <e p="EntityHierarchyDefaultGroupingStrategy.cs" t="Include" />
               <e p="EntityHierarchyDiffer.cs" t="Include" />
+              <e p="EntityHierarchyFoldingState.cs" t="Include" />
               <e p="EntityHierarchyNodeId.cs" t="Include" />
               <e p="EntityHierarchyQueryBuilder.cs" t="Include" />
               <e p="EntityHierarchyState.cs" t="Include" />
               <e p="EntityHierarchyWindow.cs" t="Include" />
-              <e p="IEntityHierarchyGroupingStrategy.cs" t="Include" />
+              <e p="IEntityHierarchy.cs" t="Include" />
               <e p="LiveLinkConfigHelper.cs" t="Include" />
               <e p="SceneMapper.cs" t="Include" />
               <e p="Search" t="Include">
-                <e p="DefaultHierarchySearcher.cs" t="Include" />
-                <e p="IHierarchySearcher.cs" t="Include" />
+                <e p="ComponentTypeAutoComplete.cs" t="Include" />
+                <e p="ComponentTypesTrie.cs" t="Include" />
+                <e p="HierarchyItemsCache.cs" t="Include" />
               </e>
               <e p="View" t="Include">
                 <e p="EntityHierarchy.cs" t="Include" />
                 <e p="EntityHierarchyItem.cs" t="Include" />
                 <e p="EntityHierarchyItemView.cs" t="Include" />
-                <e p="EntityHierarchyPool.cs" t="Include" />
               </e>
             </e>
             <e p="Extensions" t="Include">
@@ -185,28 +195,27 @@
             <e p="SystemSchedule" t="Include">
               <e p="Details" t="Include">
                 <e p="EntityMatchCountVisualElement.cs" t="Include" />
-                <e p="EntityQueryUtility.cs" t="Include" />
                 <e p="SystemDetailsVisualElement.cs" t="Include" />
               </e>
               <e p="PlayerLoop" t="Include">
-                <e p="ComponentSystemNodes.cs" t="Include" />
                 <e p="IPlayerLoopNode.cs" t="Include" />
                 <e p="PlayerLoopNode.cs" t="Include" />
                 <e p="PlayerLoopSystemGraph.cs" t="Include" />
                 <e p="PlayerLoopSystemNode.cs" t="Include" />
-              </e>
-              <e p="Pooling" t="Include">
-                <e p="SystemSchedulePool.cs" t="Include" />
+                <e p="SystemHandle.cs" t="Include" />
+                <e p="SystemHandleNode.cs" t="Include" />
               </e>
               <e p="SystemScheduleWindow.cs" t="Include" />
               <e p="TreeView" t="Include">
                 <e p="SystemInformationVisualElement.cs" t="Include" />
-                <e p="SystemScheduleTreeView.cs" t="Include" />
+                <e p="SystemTreeView.cs" t="Include" />
                 <e p="SystemTreeViewItem.cs" t="Include" />
               </e>
               <e p="Utilities" t="Include">
-                <e p="SystemScheduleSearchBuilder.cs" t="Include" />
-                <e p="SystemScheduleUtilities.cs" t="Include" />
+                <e p="EntityQueryUtility.cs" t="Include" />
+                <e p="SearchQueryParser.cs" t="Include" />
+                <e p="SystemDependencyUtilities.cs" t="Include" />
+                <e p="SystemForSearch.cs" t="Include" />
               </e>
             </e>
             <e p="Unity.DOTS.Editor.asmdef" t="Include" />
@@ -217,16 +226,20 @@
               <e p="EditorHeaderItemAttributeBridge.cs" t="Include" />
               <e p="EditorStyleUSSBridge.cs" t="Include" />
               <e p="InspectorWindowBridge.cs" t="Include" />
+              <e p="SceneBridge.cs" t="Include" />
               <e p="Unity.InternalAPIEditorBridge.002.asmdef" t="Include" />
             </e>
             <e p="Utilities" t="Include">
+              <e p="AutoComplete.cs" t="Include" />
               <e p="AverageRecorder.cs" t="Include" />
               <e p="Bindings" t="Include">
                 <e p="AggregateBinding.cs" t="Include" />
                 <e p="PreferenceBinding.cs" t="Include" />
               </e>
+              <e p="ComponentTypeCache.cs" t="Include" />
               <e p="Cooldown.cs" t="Include" />
               <e p="CustomVisualElement" t="Include">
+                <e p="CenteredMessageElement.cs" t="Include" />
                 <e p="ComponentToggleWithAccessMode.cs" t="Include" />
                 <e p="CustomLabelWithUnderline.cs" t="Include" />
                 <e p="CustomToolbarToggle.cs" t="Include" />
@@ -234,18 +247,21 @@
               <e p="EditorIcons.cs" t="Include" />
               <e p="MenuUtility.cs" t="Include" />
               <e p="Pooling" t="Include">
+                <e p="BasicPool.cs" t="Include" />
                 <e p="DictionaryPool.cs" t="Include" />
-                <e p="GenericPool.cs" t="Include" />
                 <e p="HashSetPool.cs" t="Include" />
                 <e p="IPoolable.cs" t="Include" />
                 <e p="ListPool.cs" t="Include" />
                 <e p="ObjectPool.cs" t="Include" />
+                <e p="Pool.cs" t="Include" />
                 <e p="Pooling.cs" t="Include" />
                 <e p="QueuePool.cs" t="Include" />
               </e>
               <e p="ProgressBarScope.cs" t="Include" />
               <e p="Resources.cs" t="Include" />
               <e p="SearchUtility.cs" t="Include" />
+              <e p="TelemetryWindow.cs" t="Include" />
+              <e p="Trie.cs" t="Include" />
               <e p="UIElementHelper.cs" t="Include" />
               <e p="UITemplate.cs" t="Include" />
               <e p="UssClasses.cs" t="Include" />
@@ -261,6 +277,7 @@
               <e p="Texture2DBridge.cs" t="Include" />
               <e p="TreeView" t="Include">
                 <e p="ITreeViewItem.cs" t="Include" />
+                <e p="ListView.cs" t="Include" />
                 <e p="TreeView.cs" t="Include" />
               </e>
               <e p="Unity.InternalAPIEngineBridge.002.asmdef" t="Include" />
@@ -269,6 +286,9 @@
           <e p="Tests" t="Include">
             <e p="Editor" t="Include">
               <e p="AssemblyInfo.cs" t="Include" />
+              <e p="Controls" t="Include">
+                <e p="TabViewTests.cs" t="Include" />
+              </e>
               <e p="Conversion" t="Include">
                 <e p="EntityConversionPreviewTests.cs" t="Include" />
                 <e p="EntityConversionTest.cs" t="Include" />
@@ -286,11 +306,11 @@
                   <e p="ResultAccessorHelper.cs" t="Include" />
                   <e p="SharedComponentDataDifferTests.cs" t="Include" />
                 </e>
+                <e p="EntityHierarchyFoldingStateTests.cs" t="Include" />
                 <e p="EntityHierarchyGroupingStrategyTests.cs" t="Include" />
                 <e p="EntityHierarchyQueryBuilderTests.cs" t="Include" />
-                <e p="EntityHierarchyStateTests.cs" t="Include" />
                 <e p="IntegrationTests" t="Include">
-                  <e p="EntityHierarchyDefaultGroupingStrategyIntegrationTests.cs" t="Include" />
+                  <e p="EntityWindowIntegrationTests.cs" t="Include" />
                 </e>
                 <e p="LiveLinkConfigHelperTests.cs" t="Include" />
                 <e p="TestComponents.cs" t="Include" />
@@ -305,24 +325,33 @@
               </e>
               <e p="GUI" t="Include">
                 <e p="TreeViewTests.cs" t="Include" />
+                <e p="UIToolkitTestHelper.cs" t="Include" />
               </e>
               <e p="Inspector" t="Include">
                 <e p="EntityFieldTests.cs" t="Include" />
                 <e p="EntityInspectorTests.cs" t="Include" />
               </e>
               <e p="SystemSchedule" t="Include">
-                <e p="SystemScheduleWindowTests.cs" t="Include" />
+                <e p="SystemScheduleTestUtilities.cs" t="Include" />
+                <e p="SystemScheduleWindowIntegrationTests.cs" t="Include" />
+                <e p="SystemScheduleWindowIntegrationTests.TreeViewFoldingStateTests.cs" t="Include" />
                 <e p="TestComponents.cs" t="Include" />
                 <e p="TestSystems.cs" t="Include" />
               </e>
               <e p="Unity.Dots.Editor.Tests.asmdef" t="Include" />
               <e p="Utilities" t="Include">
+                <e p="AutoCompleteTests.cs" t="Include" />
                 <e p="Bindings" t="Include">
                   <e p="PreferenceBindingTests.cs" t="Include" />
                 </e>
+                <e p="ComponentTypeCacheTests.cs" t="Include" />
                 <e p="CooldownTests.cs" t="Include" />
+                <e p="CustomVisualElement" t="Include">
+                  <e p="CenteredMessageElementTests.cs" t="Include" />
+                </e>
                 <e p="MenuUtilityTests.cs" t="Include" />
                 <e p="PoolTest.cs" t="Include" />
+                <e p="TrieTests.cs" t="Include" />
                 <e p="WorldCategoryHelperTests.cs" t="Include" />
                 <e p="WorldScope.cs" t="Include" />
               </e>

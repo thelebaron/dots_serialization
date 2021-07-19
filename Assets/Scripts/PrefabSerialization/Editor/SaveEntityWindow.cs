@@ -37,7 +37,7 @@ public class SaveEntityWindow : EditorWindow
         GUILayout.Space(15);
         EditorGUILayout.EndHorizontal();
         
-        var prefabs = PrefabSerializeUtility.GetAllPrefabs();
+        var prefabs = SaveEntityUtility.GetAllPrefabs();
         
         if (GUILayout.Button("Check for unique id collisions", GUILayout.MaxWidth(250)))
         {

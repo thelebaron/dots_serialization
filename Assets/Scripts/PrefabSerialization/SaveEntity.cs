@@ -5,17 +5,17 @@ using Unity.Entities;
 [Serializable]
 public struct SaveEntity : IComponentData
 {
-    public FixedString32 Value;
+    public FixedString32 Identifier;
 }
 
 [Serializable]
 public struct SerializeableTag : IComponentData { }
 
 [Serializable]
-public struct MissingRenderMeshTag : IComponentData { }
+public struct RenderMeshRemoved : IComponentData { }
 
 [Serializable]
-public struct MissingPhysicsColliderTag : IComponentData { }
+public struct PhysicsColliderRemoved : IComponentData { }
 
 [Serializable]
 public struct MyBlobComponent : IComponentData
