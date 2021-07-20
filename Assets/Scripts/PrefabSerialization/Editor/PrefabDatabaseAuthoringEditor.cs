@@ -35,45 +35,11 @@ public class PrefabDatabaseAuthoringEditor : Editor
 
     private void Refresh(PrefabDatabaseAuthoring script)
     {
-        var prefabs = SaveEntityUtility.GetAllPrefabs();
-        DrawAllPrefabItems(prefabs, script);
-    }
-    
-    
-    private static void DrawAllPrefabItems(string[] prefabs, PrefabDatabaseAuthoring script)
-    {
-        script.Prefabs = new List<GameObject>();
         
-        foreach (string path in prefabs)
-        {
-            //EditorGUILayout.BeginHorizontal();
-
-            //var prefab = PrefabUtility.LoadPrefabContents(path);
-            var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
-
-            // should always have the component as we filter it in the GetAllPrefabs helper
-            if (prefab.TryGetComponent<SaveEntityToDisk>(out var serializeable))
-            {
-                //Debug.Log(serializeable.guid);
-                /*if (GUILayout.Button(path, GUILayout.MaxWidth(600)))
-                {
-                    //serializeable.guid = PrefabSerializeUtility.UniqueGuid();
-                    //Selection.activeObject = AssetDatabase.LoadAssetAtPath<Object>(path);
-                }*/
-
-                //EditorGUILayout.LabelField("", GUILayout.MaxWidth(60));
-                //EditorGUILayout.LabelField("Prefab", GUILayout.MaxWidth(60));
-                //EditorGUILayout.LabelField(serializeable.guid, EditorStyles.boldLabel, GUILayout.MaxWidth(80));
-                
-                script.Prefabs.Add(prefab);
-            }
-
-            EditorGUILayout.HelpBox("Added " + prefabs.Length + " prefabs.", MessageType.Info);
-            //UnityEditor.PrefabUtility.UnloadPrefabContents(prefab);
-
-            //EditorGUILayout.EndHorizontal();
-        }
+        script.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
+        EditorGUILayout.HelpBox("Added " + script.Prefabs.Count + " prefabs.", MessageType.Info);
     }
+
 
 }
 #endif

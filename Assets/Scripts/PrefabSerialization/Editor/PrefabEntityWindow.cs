@@ -1,20 +1,24 @@
-﻿using UnityEngine;
+﻿using Unity.Entities;
+using UnityEngine;
 using UnityEditor;
 
-public class SaveEntityWindow : EditorWindow
+public class PrefabEntityWindow : EditorWindow
 {
     // todo add version json to log warning if ids are recreated
     /*string myString = "Hello World";
     bool   groupEnabled;
     bool   myBool  = true;
     float  myFloat = 1.23f;*/
-    
+    private GameObject prefabStoreGameObject;
+    private const string kPrefabDatabase = "Prefab Database";
+
     // Add menu item named "My Window" to the Window menu
-    [MenuItem ("DOTS/Save Entity Window")]
+    [MenuItem ("Tools/Save Entity Window")]
     public static void ShowWindow()
     {
-        //Show existing window instance. If one doesn't exist, make one.
-        EditorWindow.GetWindow(typeof(SaveEntityWindow));
+        var window = EditorWindow.GetWindow<PrefabEntityWindow>(title: "Prefab Entities");
+        window.Show();
+        
     }
 
     private void OnGUI()
@@ -26,7 +30,7 @@ public class SaveEntityWindow : EditorWindow
         myBool       = EditorGUILayout.Toggle ("Toggle", myBool);
         myFloat      = EditorGUILayout.Slider ("Slider", myFloat, -3, 3);
         EditorGUILayout.EndToggleGroup ();*/
-
+        minSize = new Vector2(850,300);
         GUILayout.Space(15);
         GUILayout.Label ("Overview for all Save Entities(Prefabs)", EditorStyles.boldLabel);
         EditorGUILayout.BeginHorizontal();
@@ -37,14 +41,83 @@ public class SaveEntityWindow : EditorWindow
         GUILayout.Space(15);
         EditorGUILayout.EndHorizontal();
         
-        var prefabs = SaveEntityUtility.GetAllPrefabs();
+        var prefabs = SaveUtility.GetAllPrefabs();
+        
+        ValidateForSceneEntity(prefabs);
+                
+
         
         if (GUILayout.Button("Check for unique id collisions", GUILayout.MaxWidth(250)))
         {
             CheckForIdCollisions(prefabs);
         }
-        
+
+
         DrawAllPrefabItems(prefabs);
+    }
+
+    private void ValidateForSceneEntity(string[] prefabs)
+    {
+        var results = GameObject.FindObjectsOfType<PrefabDatabaseAuthoring>();
+
+        // If zero results
+        if (results.Length.Equals(0))
+        {
+            //EditorGUILayout.HelpBox("Warning, no database entity gameobject found. ", MessageType.Warning);
+            
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Warning, no database entity gameobject found."), false);
+            }
+            
+            if (GUILayout.Button("Create Prefab Database Entity", GUILayout.MaxWidth(250)))
+            {
+                var go = new GameObject();
+                go.AddComponent<ConvertToEntity>();
+                go.name = kPrefabDatabase;
+                var component = go.AddComponent<PrefabDatabaseAuthoring>();
+                component.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
+            }
+        }
+        
+        // If zero results
+        if (results.Length>1)
+        {
+            //EditorGUILayout.HelpBox("Error, multiple database entity gameobjects found ", MessageType.Error);
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Error, multiple database entity gameobjects found."), false);
+            }
+            if (GUILayout.Button("Prune variants", GUILayout.MaxWidth(250)))
+            {
+                for (int i = results.Length - 1; i >= 1; i--)
+                {
+                    Object.DestroyImmediate(results[i].gameObject);
+                }
+                results[0].gameObject.name = kPrefabDatabase;
+            }
+        }
+        
+        if (results.Length.Equals(1))
+        {
+            //EditorGUILayout.HelpBox("Found, database entity gameobject, entities can be serialized.", MessageType.None);
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Database entity gameobject found, entities can be serialized."), true);
+                EditorGUILayout.ObjectField(kPrefabDatabase, results[0].gameObject, typeof(GameObject), true);
+            }
+
+            var databaseAuthoring = results[0];
+
+            // Enforce validity
+            if (databaseAuthoring.Prefabs.Count != SaveUtility.ReturnAllPrefabSaveEntities().Count)
+            {
+                databaseAuthoring.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
+            }
+
+            if (databaseAuthoring.GetComponent<ConvertToEntity>() == null)
+                databaseAuthoring.gameObject.AddComponent<ConvertToEntity>();
+        }
     }
 
     private static void DrawAllPrefabItems(string[] prefabs)

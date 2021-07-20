@@ -98,7 +98,7 @@ namespace Unity.Entities.Editor
                     GUILayout.MaxWidth(130));
 
 
-                bool hasSaveComponent = SaveEntityUtility.IsSaved(selectedGameObject);
+                bool hasSaveComponent = SaveUtility.IsSaved(selectedGameObject);
                 using (var changeScope = new EditorGUI.ChangeCheckScope())
                 {
                     if (hasSaveComponent)
@@ -279,7 +279,7 @@ namespace Unity.Entities.Editor
 
         private static void RegenerateId(SaveEntityToDisk serializeable)
         {
-            serializeable.guid = SaveEntityUtility.UniqueGuid();
+            serializeable.guid = SaveUtility.UniqueGuid();
 
             // If prefab is selected in scene
             if (PrefabUtility.IsPartOfPrefabInstance(serializeable.gameObject))

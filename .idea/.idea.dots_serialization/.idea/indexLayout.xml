@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelUserStore">
-    <attachedFolders />
-    <explicitIncludes>
+    <attachedFolders>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.burst@1.3.2</Path>
-      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.14.0-preview.19</Path>
-      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@1.1.0</Path>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties.ui@1.4.3-preview</Path>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@1.4.3-preview</Path>
       <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.serialization@1.4.3-preview</Path>
+    </attachedFolders>
+    <explicitIncludes>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.14.0-preview.19</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.addressables@1.16.19</Path>
       <Path>Library/PackageCache/com.unity.burst@1.3.2</Path>
+      <Path>Library/PackageCache/com.unity.burst@1.4.1</Path>
       <Path>Library/PackageCache/com.unity.entities@0.14.0-preview.19</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@2.0.7</Path>
@@ -57,6 +59,7 @@
       <Path>Library/PackageCache/com.unity.platforms.windows@0.7.0-preview.8</Path>
       <Path>Library/PackageCache/com.unity.properties.ui@1.4.3-preview</Path>
       <Path>Library/PackageCache/com.unity.properties@1.4.3-preview</Path>
+      <Path>Library/PackageCache/com.unity.properties@1.6.0-preview</Path>
       <Path>Library/PackageCache/com.unity.rendering.hybrid@0.11.0-preview.44</Path>
       <Path>Library/PackageCache/com.unity.rendering.hybrid@0.8.0-preview.19</Path>
       <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.15.2</Path>

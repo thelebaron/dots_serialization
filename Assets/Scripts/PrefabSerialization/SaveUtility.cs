@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 
 #if UNITY_EDITOR
-public static class SaveEntityUtility
+public static class SaveUtility
 {
     public static string UniqueGuid()
     {
@@ -107,6 +107,28 @@ public static class SaveEntityUtility
         return allPrefabs.ToArray();
     }
 
+    public static List<GameObject> ReturnAllPrefabSaveEntities()
+    {
+        var prefabPaths = GetAllPrefabs();
+        
+        var list = new List<GameObject>();
+
+        foreach (string path in prefabPaths)
+        {
+            //EditorGUILayout.BeginHorizontal();
+            //var prefab = PrefabUtility.LoadPrefabContents(path);
+            var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
+
+            // should always have the component as we filter it in the GetAllPrefabs helper
+            if (prefab.TryGetComponent<SaveEntityToDisk>(out var serializeable))
+            {
+                //script.Prefabs.Add(prefab);
+                list.Add(prefab);
+            }
+        }
+
+        return list;
+    }
 
     public static bool IsSaved(GameObject selectedGameObject)
     {
