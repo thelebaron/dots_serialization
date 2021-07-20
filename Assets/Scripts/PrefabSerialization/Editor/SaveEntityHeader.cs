@@ -11,11 +11,11 @@ using UnityEngine;
 namespace Unity.Entities.Editor
 {
     [InitializeOnLoad]
-    class SaveEntityIdHeader
+    class SaveEntityHeader
     {
         private static bool overrideEnabled;
         
-        static SaveEntityIdHeader()
+        static SaveEntityHeader()
         {
             UnityEditor.Editor.finishedDefaultHeaderGUI += DisplayPrefabIdHeaderCallBack;
         }
@@ -26,6 +26,7 @@ namespace Unity.Entities.Editor
             public const string NotPrefab = "Entity is not a prefab";
             public const string NotConverted = "No conversion";
             public const string NotAssetNoConversion = "Not a prefab asset and no entity conversion";
+            public const string MissingPrefabAsset = "Prefab asset is missing!";
         }
 
         enum ToggleState
@@ -64,6 +65,33 @@ namespace Unity.Entities.Editor
                     return;
                 }
 
+                if (PrefabUtility.IsPrefabAssetMissing(selectedGameObject))
+                {
+                    EditorGUILayout.LabelField(EditorGUIUtility.TrTextContentWithIcon(EntityPrefabHeaderTextStrings.MissingPrefabAsset, EditorIcons.EntityPrefab),
+                        EditorStyles.label);
+                    var saveComponent = selectedGameObject.GetComponent<SaveEntityToDisk>();
+                    if (saveComponent != null)
+                    {
+                        EditorGUILayout.HelpBox("You must save the gameObject as a prefab, and update the entity database", MessageType.Error);
+                        
+                        if (GUILayout.Button("Fix now", GUILayout.MaxWidth(100)))
+                        {
+                            var newPrefabPath = "Assets/Prefabs/" + selectedGameObject.name + ".prefab";
+                            PrefabUtility.UnpackPrefabInstance(selectedGameObject, PrefabUnpackMode.Completely, InteractionMode.UserAction);
+                            PrefabUtility.SaveAsPrefabAssetAndConnect(selectedGameObject, newPrefabPath, InteractionMode.UserAction);
+                            var window = EditorWindow.GetWindow<PrefabEntityWindow>(title: "Prefab Entities");
+                            window.Show();
+                        }
+                        if (GUILayout.Button("Delete", GUILayout.MaxWidth(100)))
+                        {
+                            // Causes crash
+                            Object.DestroyImmediate(selectedGameObject);
+                            return;
+                        }
+                    }
+                    return;
+                }
+                
                 using (new EditorGUI.DisabledGroupScope(true))
                 {
                     // make sure not prefab stage
@@ -71,7 +99,8 @@ namespace Unity.Entities.Editor
                     {
                         if (!PrefabUtility.IsPartOfAnyPrefab(selectedGameObject))
                         {
-                            if (EditorEntityScenes.IsEntitySubScene(selectedGameObject.scene) || selectedGameObject.GetComponent<ConvertToEntity>() == null)
+                            //if (EditorEntityScenes.IsEntitySubScene(selectedGameObject.scene) || selectedGameObject.GetComponent<ConvertToEntity>() == null)
+                            if (selectedGameObject.scene.isSubScene || selectedGameObject.GetComponent<ConvertToEntity>() == null)
                             {
                                 EditorGUILayout.LabelField(EditorGUIUtility.TrTextContentWithIcon(EntityPrefabHeaderTextStrings.NotConverted, EditorIcons.EntityPrefab),
                                     EditorStyles.label);

@@ -5,10 +5,7 @@ using UnityEditor;
 public class PrefabEntityWindow : EditorWindow
 {
     // todo add version json to log warning if ids are recreated
-    /*string myString = "Hello World";
-    bool   groupEnabled;
-    bool   myBool  = true;
-    float  myFloat = 1.23f;*/
+
     private GameObject prefabStoreGameObject;
     private const string kPrefabDatabase = "Prefab Database";
 
@@ -108,15 +105,30 @@ public class PrefabEntityWindow : EditorWindow
             }
 
             var databaseAuthoring = results[0];
-
-            // Enforce validity
-            if (databaseAuthoring.Prefabs.Count != SaveUtility.ReturnAllPrefabSaveEntities().Count)
-            {
-                databaseAuthoring.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
-            }
-
+            
             if (databaseAuthoring.GetComponent<ConvertToEntity>() == null)
                 databaseAuthoring.gameObject.AddComponent<ConvertToEntity>();
+
+            
+            // Enforce validity
+            // ReSharper disable once ReplaceWithSingleAssignment.False
+            bool reset = false;
+            
+            if (databaseAuthoring.Prefabs.Count != SaveUtility.ReturnAllPrefabSaveEntities().Count)
+            {
+                reset = true;
+            }
+            // Double check no missing/null
+            for (int i = 0; i < databaseAuthoring.Prefabs.Count; i++)
+            {
+                if (databaseAuthoring.Prefabs[i] == null)
+                {
+                    reset = true;
+                    break;
+                }
+            }
+            if(reset)
+                databaseAuthoring.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
         }
     }
 

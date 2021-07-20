@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Unity.Entities;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -11,6 +12,8 @@ using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 public static class SaveUtility
 {
+    private const string kPrefabDatabase = "Prefab Database";
+    
     public static string UniqueGuid()
     {
         var dictionary = new Dictionary<string, string>();
@@ -106,6 +109,87 @@ public static class SaveUtility
         }
         return allPrefabs.ToArray();
     }
+
+
+    /// <summary>
+    /// Gets the scene PrefabDatabaseAuthoring component, and updates the list of prefabs.
+    /// </summary>
+    public static void ValidateSceneEntityDatabase()
+    {
+        var results = GameObject.FindObjectsOfType<PrefabDatabaseAuthoring>();
+
+        // If zero results
+        if (results.Length.Equals(0))
+        {
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Warning, no database entity gameobject found."), false);
+            }
+            
+            if (GUILayout.Button("Create Prefab Database Entity", GUILayout.MaxWidth(250)))
+            {
+                var go = new GameObject();
+                go.AddComponent<ConvertToEntity>();
+                go.name = kPrefabDatabase;
+                var component = go.AddComponent<PrefabDatabaseAuthoring>();
+                component.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
+            }
+        }
+        
+        // If zero results
+        if (results.Length>1)
+        {
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Error, multiple database entity gameobjects found."), false);
+            }
+            if (GUILayout.Button("Prune variants", GUILayout.MaxWidth(250)))
+            {
+                for (int i = results.Length - 1; i >= 1; i--)
+                {
+                    Object.DestroyImmediate(results[i].gameObject);
+                }
+                results[0].gameObject.name = kPrefabDatabase;
+            }
+        }
+        
+        if (results.Length.Equals(1))
+        {
+            //EditorGUILayout.HelpBox("Found, database entity gameobject, entities can be serialized.", MessageType.None);
+            using (new EditorGUI.DisabledGroupScope(true))
+            {
+                EditorGUILayout.ToggleLeft(EditorGUIUtility.TrTempContent("Database entity gameobject found, entities can be serialized."), true);
+                EditorGUILayout.ObjectField(kPrefabDatabase, results[0].gameObject, typeof(GameObject), true);
+            }
+
+            var databaseAuthoring = results[0];
+            
+            if (databaseAuthoring.GetComponent<ConvertToEntity>() == null)
+                databaseAuthoring.gameObject.AddComponent<ConvertToEntity>();
+
+            
+            // Enforce validity
+            // ReSharper disable once ReplaceWithSingleAssignment.False
+            bool reset = false;
+            
+            if (databaseAuthoring.Prefabs.Count != SaveUtility.ReturnAllPrefabSaveEntities().Count)
+            {
+                reset = true;
+            }
+            // Double check no missing/null
+            for (int i = 0; i < databaseAuthoring.Prefabs.Count; i++)
+            {
+                if (databaseAuthoring.Prefabs[i] == null)
+                {
+                    reset = true;
+                    break;
+                }
+            }
+            if(reset)
+                databaseAuthoring.Prefabs = SaveUtility.ReturnAllPrefabSaveEntities();
+        }
+    }
+    
 
     public static List<GameObject> ReturnAllPrefabSaveEntities()
     {

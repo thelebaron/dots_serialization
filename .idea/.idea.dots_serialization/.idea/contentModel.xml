@@ -31,7 +31,7 @@
               <e p="DrawHierarchyIcon.cs" t="Include" />
               <e p="PrefabDatabaseAuthoringEditor.cs" t="Include" />
               <e p="PrefabEntityWindow.cs" t="Include" />
-              <e p="SaveEntityIdHeader.cs" t="Include" />
+              <e p="SaveEntityHeader.cs" t="Include" />
               <e p="SaveEntityToDiskEditor.cs" t="Include" />
               <e p="Utilities" t="Include">
                 <e p="EditorIcons.cs" t="Include" />

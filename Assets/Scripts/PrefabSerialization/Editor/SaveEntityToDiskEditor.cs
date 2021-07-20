@@ -20,9 +20,17 @@ public class SaveEntityToDiskEditor : Editor
         {
             if (!PrefabUtility.IsPartOfAnyPrefab(script.gameObject))
             {
+                Debug.LogError("Warning,"+script.gameObject+" is not part of any prefab!");
                 EditorGUILayout.HelpBox("Warning, GameObject is not part of any prefab!", MessageType.Error);
                 return;
             }
+        }
+
+        //Debug.Log(PrefabUtility.IsPartOfAnyPrefab(script.gameObject) + script.gameObject.name);
+        {
+            //Debug.Log(PrefabUtility.GetPrefabAssetType(script));
+
+            //Debug.Log(PrefabUtility.IsPrefabAssetMissing(script) + script.gameObject.name);
         }
 
         var modifications = PrefabUtility.GetPropertyModifications(script);
@@ -30,7 +38,7 @@ public class SaveEntityToDiskEditor : Editor
         {
             foreach (var modification in modifications)
             {
-                if (modification.target.name == "SaveEntityToDisk" && modification.propertyPath == "guid")
+                if (modification.target!=null && modification.target.name == "SaveEntityToDisk" && modification.propertyPath == "guid")
                 {
                     EditorGUILayout.HelpBox("Warning, Save component has unapplied modifications!", MessageType.Warning);
                     return;

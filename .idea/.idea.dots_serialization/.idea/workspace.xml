@@ -20,26 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DogCubePrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DogCubePrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SceneDependencyCache/f07b931a3c2f2f9c418cdca4a1be551a.sceneWithBuildSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SceneDependencyCache/f07b931a3c2f2f9c418cdca4a1be551a.sceneWithBuildSettings.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DummyContent/DogCubePrefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DummyContent/DogCubePrefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/CommentIcon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gizmos/CommentIcon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogCube (18).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogCube (18).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CUUUUBE.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CUUUUBE.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_5.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityUtility.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +47,60 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Signals/SignalEmitterInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Hybrid/Conversion/BaseShapeConversionSystem_Data.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BinarySerialization.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/Diagnostics/Data/EventDataSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics/Collision/Colliders/CompoundCollider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/inspectors/AnimationTrackInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.rendering.hybrid@0.11.0-preview.44/Unity.Rendering.Hybrid/Occlusion/OccluderInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GuidUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/StyleSheets/Images/LightSkin/TimelineKeyframe.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.properties@1.6.0-preview/Runtime/Unity.Properties/Utility/TypeConversion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetsSettingsGroupTreeView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Editor/Utilities/StatusMessageUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/52/5e9cdb9d/PrefabStageUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetSettingsInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CommentComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b5/c70a842b/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/Scripts/Editor/TextureProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Utilities/EditorIcons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/7d/e52f8775/ObjectPreview.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/20/d4ba8cd9/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TrackGui/InlineCurveEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/44/09feb81b/EditorGUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/DirectorNamedColor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/78/7e424bb7/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Extensions/TimeSpanExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/58/5b0af851/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b1/1a5ae712/InteractionMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummySaveAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionPreview.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b3/43a93d4d/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/World.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/EntityManagerCreateDestroyEntities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/EntityDataAccess.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,79 +117,40 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/17/c69fce2d/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabDatabaseAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Signals/SignalEmitterInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Runtime/ResourceManager/ResourceLocations/ResourceLocationBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/670A3705-7002-4116-9ECF-F5E5A94E9AD4/65/c4fbf1f1/IConvertGameObjectToEntity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Hybrid/Conversion/BaseShapeConversionSystem_Data.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/6c/2e43a7a5/PrefabUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BinarySerialization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/4e/a87b2dea/PropertyModification.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DDF8EAC-3856-492A-B1B8-CF42618915CC/99/49d41291/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E81E1-CB34-41CC-97D2-6B1910DAAE77/fb/027792ca/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/Utilities/MenuUtilityTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/cf/cf495f20/AddedComponent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406A456-CF73-4443-B3D0-2A7D123287F1/07/38eeefe9/FileInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/Diagnostics/Data/EventDataSet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/Conversion/EntityConversionTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/inspectors/AnimationTrackInspector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GuidUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/StyleSheets/Images/LightSkin/TimelineKeyframe.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/package.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/8d/58d555f5/PrefabUnpackMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Constants.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetsSettingsGroupTreeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Editor/Utilities/StatusMessageUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/52/5e9cdb9d/PrefabStageUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.scriptablebuildpipeline@1.15.2/Editor/Interfaces/IBuildSpriteData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/EntityHierachy/EntityHierarchyDefaultGroupingStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics/Dynamics/Simulation/TriggerEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetSettingsInspector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CommentComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b5/c70a842b/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/EntityHierarchy/DataDiffers/ComponentDataDifferTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Utilities/EditorIcons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/EntityHierarchy/IntegrationTests/EntityWindowIntegrationTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/20/d4ba8cd9/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TrackGui/InlineCurveEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/44/09feb81b/EditorGUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/DirectorNamedColor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/78/7e424bb7/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Extensions/TimeSpanExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageFilledGenerateWork.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/58/5b0af851/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b1/1a5ae712/InteractionMode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummySaveAuthoring.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.serialization@1.6.2-preview/Runtime/Unity.Serialization/Json/ParseErrorExceptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Attributes/MenuEntryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b3/43a93d4d/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Serializeable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SerializeableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializePrefabSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializeablePrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummyClassAuthoring.cs" />
@@ -180,14 +192,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/PrefabDatabaseAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabDatabaseAuthoring.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" />
       </list>
     </option>
   </component>
@@ -260,7 +274,7 @@
       <workItem from="1626359116330" duration="230000" />
       <workItem from="1626359406534" duration="72000" />
       <workItem from="1626359499454" duration="72913000" />
-      <workItem from="1626797591793" duration="4707000" />
+      <workItem from="1626797591793" duration="13748000" />
     </task>
     <servers />
   </component>
@@ -290,11 +304,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626731003406" />
-    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1626804359573">
+    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1626806666773">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1293" y="95" width="666" height="849" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@-1920.0.1920.1040" timestamp="1624062240100" />
-    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626804359573" />
+    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626806666773" />
     <state x="943" y="315" key="search.everywhere.popup" timestamp="1626297741840">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
