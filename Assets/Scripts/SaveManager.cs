@@ -14,7 +14,30 @@ public class SaveManager : MonoBehaviour
 {
     private EntityQuery entitiesToSaveQuery;
     public static SaveManager instance;
+    
+    void OnGUI()
+    {
+        // pos x,y, size x,y
+        if (GUI.Button(new Rect(15, 50, 100, 35), "Save"))
+        {
+            SaveManager.instance.TestSave();
+        }
 
+        if (GUI.Button(new Rect(15, 100, 100, 35), "Load"))
+        {
+            SaveManager.instance.TestLoad();
+        }
+
+        if (GUI.Button(new Rect(15, 150, 100, 35), "Destroy All Entities"))
+        {
+            if(World.All.Count<1)
+                return;
+            
+            SaveManager.instance.TestDestroy();
+        }
+        
+    }
+    
     [UnityEngine.ContextMenu("Save")]
     public void TestSave()
     {

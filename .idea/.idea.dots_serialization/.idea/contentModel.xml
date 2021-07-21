@@ -9,7 +9,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="AssetMap.cs" t="Include" />
           <e p="BinarySerialization.cs" t="Include" />
           <e p="CommentComponent.cs" t="Include" />
           <e p="DummyScripts" t="Include">
@@ -20,10 +19,6 @@
             <e p="DrawHierarchyIcon.cs" t="Include" />
             <e p="FavouriteBarIcons.cs" t="Include" />
             <e p="FavouritesBarEditor.cs" t="Include" />
-            <e p="SerializeComponentEditor.cs" t="Include" />
-          </e>
-          <e p="GameWindow" t="Include">
-            <e p="GameWindow.cs" t="Include" />
           </e>
           <e p="PrefabSerialization" t="Include">
             <e p="Editor" t="Include">
@@ -45,13 +40,10 @@
             <e p="SaveUtility.cs" t="Include" />
           </e>
           <e p="SaveManager.cs" t="Include" />
-          <e p="SerializeComponent.cs" t="Include" />
           <e p="Utility" t="Include">
-            <e p="DebugJsonData.cs" t="Include" />
             <e p="EditorMap.cs" t="Include" />
             <e p="FileHelper.cs" t="Include" />
             <e p="GuidUtility.cs" t="Include" />
-            <e p="JsonMap.cs" t="Include" />
             <e p="PrimitiveHelper.cs" t="Include" />
           </e>
         </e>

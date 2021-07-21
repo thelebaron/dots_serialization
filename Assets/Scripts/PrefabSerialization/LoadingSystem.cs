@@ -39,7 +39,8 @@ public class RestoreAfterLoadSystem : SystemBase
                         return;
                     }
                     var renderMesh = EntityManager.GetSharedComponentData<RenderMesh>(prefab);
-                    var description = new RenderMeshDescription(renderMesh.mesh, renderMesh.material);
+
+                    var description = new RenderMeshDescription(renderMesh.mesh, renderMesh.material,renderMesh.castShadows, renderMesh.receiveShadows);
                     RenderMeshUtility.AddComponents(entity, commandBuffer, description);
                     commandBuffer.RemoveComponent<RenderMeshRemoved>(entity);
                 }

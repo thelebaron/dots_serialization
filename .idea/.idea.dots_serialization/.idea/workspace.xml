@@ -22,21 +22,24 @@
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CUUUUBE.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CUUUUBE.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sphere_5.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameWindow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +54,11 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Hybrid/Conversion/BaseShapeConversionSystem_Data.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BinarySerialization.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/Diagnostics/Data/EventDataSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics/Collision/Colliders/CompoundCollider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FileHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/inspectors/AnimationTrackInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/PrimitiveHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,7 +69,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.properties@1.6.0-preview/Runtime/Unity.Properties/Utility/TypeConversion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetsSettingsGroupTreeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameWindow/GameWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Editor/Utilities/StatusMessageUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/52/5e9cdb9d/PrefabStageUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetSettingsInspector.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,7 +98,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b3/43a93d4d/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SerializeComponentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/World.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/EntityManagerCreateDestroyEntities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/EntityDataAccess.cs" root0="SKIP_HIGHLIGHTING" />
@@ -132,7 +129,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406A456-CF73-4443-B3D0-2A7D123287F1/07/38eeefe9/FileInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/Conversion/EntityConversionTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/8d/58d555f5/PrefabUnpackMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Constants.cs" root0="FORCE_HIGHLIGHTING" />
@@ -146,6 +142,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageFilledGenerateWork.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.serialization@1.6.2-preview/Runtime/Unity.Serialization/Json/ParseErrorExceptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.rendering.hybrid@0.11.0-preview.44/Unity.Rendering.Hybrid/RenderMeshUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Attributes/MenuEntryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -189,12 +186,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DummyScripts/DummySaveAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/PrefabDatabaseAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabDatabaseAuthoring.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityIdHeader.cs" />
@@ -202,6 +196,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SerializeComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" />
       </list>
     </option>
   </component>
@@ -274,7 +271,7 @@
       <workItem from="1626359116330" duration="230000" />
       <workItem from="1626359406534" duration="72000" />
       <workItem from="1626359499454" duration="72913000" />
-      <workItem from="1626797591793" duration="13748000" />
+      <workItem from="1626797591793" duration="16053000" />
     </task>
     <servers />
   </component>
