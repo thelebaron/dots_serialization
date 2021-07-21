@@ -1,0 +1,22 @@
+{
+    "name": "thelebaron.SaveTools.Editor",
+    "rootNamespace": "",
+    "references": [
+        "thelebaron.SaveTools",
+        "Unity.Entities",
+        "Unity.Entities.Hybrid",
+        "Unity.Scenes",
+        "Unity.Scenes.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

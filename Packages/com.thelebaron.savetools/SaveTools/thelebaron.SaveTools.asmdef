@@ -1,0 +1,21 @@
+{
+    "name": "thelebaron.SaveTools",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Entities",
+        "Unity.Physics",
+        "Unity.Rendering.Hybrid",
+        "Unity.Entities.Hybrid",
+        "Unity.Collections",
+        "Unity.Scenes"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

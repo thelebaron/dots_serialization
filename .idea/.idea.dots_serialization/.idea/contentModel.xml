@@ -20,26 +20,6 @@
             <e p="FavouriteBarIcons.cs" t="Include" />
             <e p="FavouritesBarEditor.cs" t="Include" />
           </e>
-          <e p="PrefabSerialization" t="Include">
-            <e p="Editor" t="Include">
-              <e p="Constants.cs" t="Include" />
-              <e p="DrawHierarchyIcon.cs" t="Include" />
-              <e p="PrefabDatabaseAuthoringEditor.cs" t="Include" />
-              <e p="PrefabEntityWindow.cs" t="Include" />
-              <e p="SaveEntityHeader.cs" t="Include" />
-              <e p="SaveEntityToDiskEditor.cs" t="Include" />
-              <e p="Utilities" t="Include">
-                <e p="EditorIcons.cs" t="Include" />
-              </e>
-            </e>
-            <e p="LoadingSystem.cs" t="Include" />
-            <e p="PrefabDatabaseAuthoring.cs" t="Include" />
-            <e p="PrefabSystem.cs" t="Include" />
-            <e p="SaveEntity.cs" t="Include" />
-            <e p="SaveEntityToDisk.cs" t="Include" />
-            <e p="SaveUtility.cs" t="Include" />
-          </e>
-          <e p="SaveManager.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="EditorMap.cs" t="Include" />
             <e p="FileHelper.cs" t="Include" />
@@ -52,15 +32,37 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive">
         <e p="com.thelebaron.buildtools" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="Git.cs" t="Include" />
-              <e p="GitCommands.cs" t="Include" />
-              <e p="ProcessExtensions.cs" t="Include" />
-              <e p="ProjectBuilder.cs" t="Include" />
-              <e p="SemVer.cs" t="Include" />
-              <e p="TextureProcessor.cs" t="Include" />
-              <e p="thelebaron.buildversion.asmdef" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="FileManagement.cs" t="Include" />
+            <e p="Git.cs" t="Include" />
+            <e p="GitCommands.cs" t="Include" />
+            <e p="ProcessExtensions.cs" t="Include" />
+            <e p="ProjectBuilder.cs" t="Include" />
+            <e p="SemVer.cs" t="Include" />
+            <e p="thelebaron.buildversion.asmdef" t="Include" />
+          </e>
+        </e>
+        <e p="com.thelebaron.savetools" t="Include">
+          <e p="SaveTools" t="Include">
+            <e p="LoadingSystem.cs" t="Include" />
+            <e p="PrefabDatabaseAuthoring.cs" t="Include" />
+            <e p="PrefabSystem.cs" t="Include" />
+            <e p="SaveEntity.cs" t="Include" />
+            <e p="SaveEntityToDisk.cs" t="Include" />
+            <e p="SaveManager.cs" t="Include" />
+            <e p="thelebaron.SaveTools.asmdef" t="Include" />
+          </e>
+          <e p="SaveTools.Editor" t="Include">
+            <e p="Constants.cs" t="Include" />
+            <e p="DrawHierarchyIcon.cs" t="Include" />
+            <e p="PrefabDatabaseAuthoringEditor.cs" t="Include" />
+            <e p="PrefabEntityWindow.cs" t="Include" />
+            <e p="SaveEntityHeader.cs" t="Include" />
+            <e p="SaveEntityToDiskEditor.cs" t="Include" />
+            <e p="SaveUtility.cs" t="Include" />
+            <e p="thelebaron.SaveTools.Editor.asmdef" t="Include" />
+            <e p="Utilities" t="Include">
+              <e p="EditorIcons.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -353,6 +355,8 @@
       </e>
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="thelebaron.buildtools.csproj" t="IncludeRecursive" />
+      <e p="thelebaron.SaveTools.csproj" t="IncludeRecursive" />
+      <e p="thelebaron.SaveTools.Editor.csproj" t="IncludeRecursive" />
       <e p="Unity.DOTS.Editor.csproj" t="IncludeRecursive" />
       <e p="Unity.DOTS.Editor.Tests.csproj" t="IncludeRecursive" />
       <e p="Unity.InternalAPIEditorBridge.002.csproj" t="IncludeRecursive" />
