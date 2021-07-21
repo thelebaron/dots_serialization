@@ -79,7 +79,6 @@
       <Path>Logs</Path>
       <Path>Release</Path>
       <Path>Saves</Path>
-      <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>

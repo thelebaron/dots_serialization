@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/New Sub Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AssetMap.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DiskAssetMap.cs1" beforeDir="false" />
@@ -40,6 +41,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DebugJsonData.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/JsonMap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +273,7 @@
       <workItem from="1626359116330" duration="230000" />
       <workItem from="1626359406534" duration="72000" />
       <workItem from="1626359499454" duration="72913000" />
-      <workItem from="1626797591793" duration="16053000" />
+      <workItem from="1626797591793" duration="16764000" />
     </task>
     <servers />
   </component>
