@@ -20,273 +20,230 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95009d75-6239-47bb-b55a-024349f22054" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/SceneDependencyCache/3d55e8aee072367678c76360272b4078.sceneWithBuildSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SceneDependencyCache/3d55e8aee072367678c76360272b4078.sceneWithBuildSettings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/Ceras.4.1.7.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net45/Ceras.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net45/Ceras.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net47/Ceras.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net47/Ceras.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/netstandard2.0/Ceras.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/netstandard2.0/Ceras.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/Newtonsoft.Json.12.0.3.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/packageIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/System.Buffers.4.5.0.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netcoreapp2.0/_._" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/uap10.0.16299/_._" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netcoreapp2.0/_._" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/uap10.0.16299/_._" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/useSharedDesignerContext.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/version.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/LICENSE.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/System.Runtime.CompilerServices.Unsafe.4.5.2.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/useSharedDesignerContext.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/version.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Gizmos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Gizmos/CommentIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Gizmos/CommentIcon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Gizmos/SaveEntityToDisk icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Gizmos/SaveEntityToDisk icon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Constants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Constants.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/DrawHierarchyIcon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/DrawHierarchyIcon.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Gizmos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Gizmos/CommentIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Gizmos/CommentIcon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Gizmos/SaveEntityToDisk icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Gizmos/SaveEntityToDisk icon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/PrefabDatabaseAuthoringEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/PrefabDatabaseAuthoringEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/PrefabEntityWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/PrefabEntityWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveEntityHeader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveEntityHeader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveEntityToDiskEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveEntityToDiskEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/SaveUtility.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Utilities.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Utilities/EditorIcons.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/Utilities/EditorIcons.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/thelebaron.SaveTools.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/thelebaron.SaveTools.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/Gizmos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/Gizmos/CommentIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/Gizmos/CommentIcon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/Gizmos/SaveEntityToDisk icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/Gizmos/SaveEntityToDisk icon.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/LoadingSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/LoadingSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/PrefabDatabaseAuthoring.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/PrefabDatabaseAuthoring.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/PrefabSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/PrefabSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveEntity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveEntityToDisk.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveEntityToDisk.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/thelebaron.SaveTools.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/thelebaron.SaveTools.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Capsule_1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Capsule_1.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dots_serialization/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GameVersion.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameVersion.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/SaveEntityToDisk icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gizmos/SaveEntityToDisk icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetMap.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AssetMap.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Constants.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Constants.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/DrawHierarchyIcon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabDatabaseAuthoringEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/PrefabEntityWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityHeader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/SaveEntityToDiskEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Utilities/EditorIcons.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/Editor/Utilities/EditorIcons.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabDatabaseAuthoring.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabDatabaseAuthoring.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/PrefabSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveEntityToDisk.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/AssetMapUtilities.cs1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Editor/thelebaron.SaveTools.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Editor/thelebaron.SaveTools.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/Runtime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/AddressablesLink.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/AddressablesLink/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/AddressablesLink/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/catalog.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/catalog.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/aa/settings.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/Ceras.4.1.7.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net45/Ceras.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net45/Ceras.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net47/Ceras.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/net47/Ceras.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/netstandard2.0/Ceras.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Ceras.4.1.7/lib/netstandard2.0/Ceras.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/Newtonsoft.Json.12.0.3.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net20/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net35/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net40/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/net45/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/Newtonsoft.Json.12.0.3/packageIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/LICENSE.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/System.Buffers.4.5.0.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netcoreapp2.0/_._" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard1.1/System.Buffers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/netstandard2.0/System.Buffers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/lib/uap10.0.16299/_._" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/net45/System.Buffers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netcoreapp2.0/_._" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard1.1/System.Buffers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/netstandard2.0/System.Buffers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/ref/uap10.0.16299/_._" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/useSharedDesignerContext.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Buffers.4.5.0/version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/LICENSE.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/System.Runtime.CompilerServices.Unsafe.4.5.2.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/THIRD-PARTY-NOTICES.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/useSharedDesignerContext.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/System.Runtime.CompilerServices.Unsafe.4.5.2/version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.buildtools/game.buildconfiguration" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.thelebaron.buildtools/game.buildconfiguration" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Configuration.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.EnterpriseServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Net.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Net.Http.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Xml.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Xml.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Addressables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Addressables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Assembly-CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Mono.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.ComponentModel.Composition.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.EnterpriseServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Globalization.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.ServiceModel.Internals.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Xml.XPath.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Addressables.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Build.SlimPlayerRuntime.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Burst.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Burst.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Collections.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Collections.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Deformations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Deformations.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.Hybrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.Hybrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.InternalAPIEngineBridge.002.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.InternalAPIEngineBridge.002.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Jobs.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Jobs.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.Hybrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.Hybrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.Hybrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.Hybrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Platforms.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Platforms.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.Reflection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.Reflection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Rendering.Hybrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Rendering.Hybrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ResourceManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ResourceManager.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Scenes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Scenes.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ScriptableBuildPipeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ScriptableBuildPipeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Serialization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Serialization.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Burst.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Burst.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Collections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Deformations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.Hybrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Entities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.InternalAPIEngineBridge.002.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Jobs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.Hybrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Mathematics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.Hybrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Physics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Platforms.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.Reflection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Properties.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Rendering.Hybrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ResourceManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Scenes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.ScriptableBuildPipeline.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Serialization.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.Hybrid.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.Hybrid.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AndroidJNIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DSPGraphModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputLegacyModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.LocalizationModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ProfilerModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.StreamingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubsystemsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextCoreModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextCoreModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsNativeModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityCurlModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityCurlModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VFXModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VirtualTexturingModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/mscorlib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Managed/mscorlib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Timeline.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.Hybrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/Unity.Transforms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AndroidJNIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DSPGraphModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputLegacyModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.LocalizationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ProfilerModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.StreamingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.SubsystemsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextCoreModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIElementsNativeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityCurlModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VFXModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.VirtualTexturingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/UnityEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Managed/netstandard.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Plugins/x86_64/lib_burst_generated.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Plugins/x86_64/lib_burst_generated.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Plugins/x86_64/lib_burst_generated.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/Plugins/x86_64/lib_burst_generated.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/Plugins/x86_64/liblz4.dll" beforeDir="false" />
@@ -298,7 +255,6 @@
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/StreamingAssets/aa/link.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/StreamingAssets/aa/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/StreamingAssets/aa/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/StreamingAssets/catalog.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/StreamingAssets/catalog.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/globalgamemanagers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/globalgamemanagers.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/level0" afterDir="false" />
@@ -307,6 +263,7 @@
       <change beforePath="$PROJECT_DIR$/Release/Product Name_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Release/Product Name_Data/sharedassets0.assets.resS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/UnityCrashHandler64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Release/UnityCrashHandler64.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Release/UnityPlayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Release/UnityPlayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,6 +288,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/17/c69fce2d/AssetDatabase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Runtime/ResourceManager/ResourceLocations/ResourceLocationBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Signals/SignalEmitterInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/02F4BEF8-73CB-415D-BE71-E2828BF95647/41/dbdb44d2/BinaryReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics.Hybrid/Conversion/BaseShapeConversionSystem_Data.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/670A3705-7002-4116-9ECF-F5E5A94E9AD4/65/c4fbf1f1/IConvertGameObjectToEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/6c/2e43a7a5/PrefabUtility.cs" root0="SKIP_HIGHLIGHTING" />
@@ -357,6 +315,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.rendering.hybrid@0.11.0-preview.44/Unity.Rendering.Hybrid/Occlusion/OccluderInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GuidUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/StyleSheets/Images/LightSkin/TimelineKeyframe.png.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/LoadingSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities.Tests/Serialization/SerializeTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/8d/58d555f5/PrefabUnpackMode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -369,15 +329,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/52/5e9cdb9d/PrefabStageUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.physics@0.5.0-preview.1/Unity.Physics/Dynamics/Simulation/TriggerEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/EntityHierarchy/DataDiffers/ComponentDataDifferTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/Serialization/BinarySerialization.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.16.19/Editor/GUI/AddressableAssetSettingsInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CommentComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b5/c70a842b/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/7d/e52f8775/ObjectPreview.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/DrawHierarchyIcon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Tests/Editor/EntityHierarchy/IntegrationTests/EntityWindowIntegrationTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/FavouritesBarEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/20/d4ba8cd9/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/treeview/TrackGui/InlineCurveEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
@@ -387,6 +346,7 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/Editor/ProjectBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Extensions/TimeSpanExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.thelebaron.buildtools/Editor/SemVer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/58/5b0af851/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Image/ImageFilledGenerateWork.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b1/1a5ae712/InteractionMode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -399,6 +359,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.4.8/Editor/Attributes/MenuEntryAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.17.0-preview.42/Unity.Entities/Serialization/SerializeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.unity.dots.editor@0.12.0-preview.6/Editor/Conversion/EntityConversionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/127E81E1-CB34-41CC-97D2-6B1910DAAE77/5d/9bd3b704/ReadCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC14D30A-5E05-40EE-9311-ED6DF63D9074/b3/43a93d4d/EditorSceneManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -452,9 +413,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/LoadingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PrefabSerialization/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveUtility.cs" />
-        <option value="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools.Editor/DrawHierarchyIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/FavouriteBarIcons.cs" />
+        <option value="$PROJECT_DIR$/Packages/com.thelebaron.savetools/SaveTools/SaveManager.cs" />
       </list>
     </option>
   </component>
@@ -528,7 +489,11 @@
       <workItem from="1626359406534" duration="72000" />
       <workItem from="1626359499454" duration="72913000" />
       <workItem from="1626797591793" duration="16881000" />
-      <workItem from="1626890948109" duration="2360000" />
+      <workItem from="1626890948109" duration="2946000" />
+      <workItem from="1626898014337" duration="4577000" />
+      <workItem from="1626903073562" duration="2996000" />
+      <workItem from="1627492723706" duration="375000" />
+      <workItem from="1627509208827" duration="631000" />
     </task>
     <servers />
   </component>
@@ -558,11 +523,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626731003406" />
-    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1626806666773">
+    <state x="836" y="128" width="888" height="1143" key="find.popup" timestamp="1627492991535">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1293" y="95" width="666" height="849" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@-1920.0.1920.1040" timestamp="1624062240100" />
-    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1626806666773" />
+    <state x="836" y="128" width="888" height="1143" key="find.popup/-1920.0.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1627492991535" />
     <state x="943" y="315" key="search.everywhere.popup" timestamp="1626297741840">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

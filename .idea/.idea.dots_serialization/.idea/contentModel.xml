@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\thele\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\thele\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_dots_serialization.1569902564.00" t="ExcludeRecursive" />
+    <e p="C:\Users\thele\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
     <e p="F:\Repositories\dots_serialization" t="IncludeRecursive">
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -17,8 +18,6 @@
           </e>
           <e p="Editor" t="Include">
             <e p="DrawHierarchyIcon.cs" t="Include" />
-            <e p="FavouriteBarIcons.cs" t="Include" />
-            <e p="FavouritesBarEditor.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="EditorMap.cs" t="Include" />
@@ -55,6 +54,10 @@
           <e p="SaveTools.Editor" t="Include">
             <e p="Constants.cs" t="Include" />
             <e p="DrawHierarchyIcon.cs" t="Include" />
+            <e p="Favourites" t="Include">
+              <e p="FavouriteBarIcons.cs" t="Include" />
+              <e p="FavouritesBarEditor.cs" t="Include" />
+            </e>
             <e p="PrefabDatabaseAuthoringEditor.cs" t="Include" />
             <e p="PrefabEntityWindow.cs" t="Include" />
             <e p="SaveEntityHeader.cs" t="Include" />

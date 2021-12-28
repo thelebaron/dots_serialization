@@ -122,7 +122,7 @@ public class SaveManager : MonoBehaviour
          * 4. Serialize the new world to a save file.
          */
         
-        EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+        var entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
         //var serializeWorld = new World("Serialization World");
         using (var serializeWorld = new World("Saving World"))
         {
@@ -177,14 +177,13 @@ public class SaveManager : MonoBehaviour
             {
                 SerializeUtility.SerializeWorld(serializeManager, writer);
             }
-            
-            #if UNITY_EDITOR
+            /*#if UNITY_EDITOR
             using (var writer = new StreamWriter(yaml))
             {
                 writer.NewLine = "\n";
                 SerializeUtility.SerializeWorldIntoYAML(serializeManager, writer, false);
             }
-            #endif
+            #endif*/
         }
     }
 
